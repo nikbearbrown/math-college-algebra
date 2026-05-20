@@ -218,3 +218,37 @@ All five are about dealing with quantities that have *both magnitude and directi
 Rectangular coordinates are natural when the world is organized along perpendicular axes — when north and east are the relevant directions. Angles, distances, rotations, and paths are all more naturally expressed in ways that carry both pieces of information at once. Every topic in this chapter is a different mathematical formalism for doing that.
 
 The surveyors mapping the Himalayas had no GPS, no satellite imagery, no way to go and measure directly. What they had was angles, careful measurement, and the laws that govern how angles and distances are related in triangles. They computed the height of the world's highest mountain from measurements taken more than a hundred miles away. That is what trigonometry can do when its tools are used with care.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 10.1 — Law of sines vs. law of cosines.** Tell an LLM: "I have a triangle. When should I use the Law of Sines and when should I use the Law of Cosines?" Force a precise answer that maps to the four standard cases (SSS, SAS, ASA, SSA). Then ask: "What is the *ambiguous case* and why does it arise specifically with SSA?" The LLM should explain that two angles can produce the same opposite side length, so two valid triangles can match the given data — or one, or none. Probe with a specific SSA example and have the LLM enumerate the possibilities.
+
+**LLM Exercise 10.2 — Why $r$ can be negative.** Ask an LLM: "In polar coordinates, the radius $r$ is sometimes allowed to be negative. What does that even mean geometrically?" Push for the explanation: $(r, \theta)$ with negative $r$ refers to the point you'd reach by going $|r|$ in the *opposite* direction from $\theta$. Then ask: "Couldn't I always rewrite $(-r, \theta)$ as $(r, \theta + \pi)$ instead, and avoid negative radii entirely?" Yes — but then ask why mathematicians keep the negative-$r$ convention anyway. The answer involves convenience for plotting and for certain polar-equation simplifications.
+
+**LLM Exercise 10.3 — Multiplication by $i$ as rotation.** Ask an LLM: "Why does multiplying a complex number by $i$ rotate it 90° counterclockwise?" Force the geometric derivation: $i = 0 + 1i$ has magnitude 1 and angle $\pi/2$, so multiplication by $i$ rotates by $\pi/2$ and scales by 1. Then ask: "Why does multiplying by $i$ twice equal multiplication by $-1$?" The answer: two 90° rotations equal a 180° rotation. The lesson: complex multiplication is rotation-and-scaling, geometrically.
+
+**LLM Exercise 10.4 — Parametric equations have memory.** Tell an LLM: "Why can a parametric curve $x = f(t), y = g(t)$ trace the same set of points twice, while $y = f(x)$ cannot?" Push for the explanation that parametric equations encode *time* — the path matters, not just the set of points. Then ask: "Give me a parametric equation that traces a circle clockwise, and one that traces the same circle counterclockwise." The LLM should produce both. Verify that the underlying point set is identical.
+
+**LLM Exercise 10.5 — What does the dot product compute?** Ask an LLM: "If $\vec{u} \cdot \vec{v} = 0$, what does that say geometrically?" The expected answer: the vectors are perpendicular. Then ask: "If $\vec{u} \cdot \vec{v} > 0$, what does *that* say?" Push it past "they point in similar directions" to a precise answer: the angle between them is less than 90°. Then ask: "Why does the dot product equal $|\vec{u}||\vec{v}|\cos\theta$ — what is $\cos\theta$ doing in this formula?" Force the geometric argument: $\cos\theta$ measures how much $\vec{v}$ projects onto $\vec{u}$.
+
+---
+
+## AI Wayback Machine
+
+**Bhāskara II** wrote the *Līlāvatī* in 12th-century India — a textbook of arithmetic, algebra, and trigonometry that became standard in Indian schools for centuries. Many trigonometric identities and applications we still teach were systematized by him.
+
+**Run this:**
+
+```
+Who was Bhāskara II, and how does his work connect to the further applications of trigonometry we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Bhāskara II"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to solve one specific problem from the *Līlāvatī* using modern notation.
+- Ask it about the legend of the *Līlāvatī* being written for Bhāskara's daughter — and whether it's likely true.
+
+What changes? What gets better? What gets worse?

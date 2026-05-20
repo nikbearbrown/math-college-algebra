@@ -223,3 +223,37 @@ That's why these functions are everywhere. Not because mathematicians decided to
 The four parameters — amplitude, period, phase, vertical shift — encode everything about the wave. Amplitude is how far the system strays from equilibrium. Period is how long one oscillation takes. Phase is when in the cycle we start the clock. Vertical shift is where equilibrium sits on the scale we're measuring. Change the physical system, and these four numbers change. The functional form stays the same.
 
 That is the design philosophy of periodic functions: four numbers, infinite variety, and every repeating thing in the physical world described by a sum of them.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 8.1 — The four parameters specify everything.** Ask an LLM: "Any sinusoid can be written as $y = A\sin(B(x - C)) + D$. Why are exactly *four* parameters needed — no more, no fewer?" Push it to identify what each parameter controls (amplitude, period via $B$, phase shift, vertical shift) and why no other transformation of a sinusoid is independent of these four. Then ask: "What about reflection across the $x$-axis — isn't that a fifth degree of freedom?" The answer should explain that reflection is captured by the sign of $A$.
+
+**LLM Exercise 8.2 — Why tangent has vertical asymptotes.** Tell an LLM: "Tangent has vertical asymptotes at $\theta = \pi/2 + k\pi$. Sine and cosine never have asymptotes. What's different?" Force the explanation to connect to Chapter 5's rational-function asymptotes — tangent is $\sin\theta / \cos\theta$, and the denominator hits zero precisely at $\pi/2 + k\pi$ where the numerator does not. Then ask: "Are these asymptotes 'holes' or true vertical asymptotes?" Push the LLM to apply the Chapter 5 distinction.
+
+**LLM Exercise 8.3 — Why $\arcsin$ has a restricted range.** Ask an LLM: "If $\sin(30°) = 0.5$ and $\sin(150°) = 0.5$, then $\arcsin(0.5)$ should equal both $30°$ and $150°$. Why is it defined to equal only $30°$?" The answer requires understanding that an inverse function must be a function — single-valued. Then ask: "Why was the range $[-\pi/2, \pi/2]$ chosen, rather than $[0, \pi]$ or some other interval?" Probe the answer: this interval covers all output values exactly once and includes the natural "small angle" reference cases.
+
+**LLM Exercise 8.4 — When tides aren't sinusoidal.** Give an LLM this: "A pure sinusoidal tide model has equal high tides and equal low tides, equally spaced. But real tides at many locations show *two unequal high tides per day* (mixed semidiurnal tides) and seasonal variation. Why does the simple sinusoid fail there?" Force it to explain the limitation of a single sinusoid and what additional sinusoids (the moon's, the sun's, with different periods and amplitudes summed) are needed to model the real signal. The lesson: real periodic phenomena are often *sums* of sinusoids, not single ones.
+
+**LLM Exercise 8.5 — Tangent as slope.** Ask an LLM: "Why does $\tan\theta$ equal the slope of the radius drawn at angle $\theta$ from the origin?" Push it to derive — slope = rise/run = $y/x = \sin\theta/\cos\theta = \tan\theta$. Then ask: "What does the asymptote of the tangent function correspond to, geometrically, in terms of the radius?" The answer: a vertical radius has undefined slope (vertical line), corresponding to the vertical asymptote. The geometry and algebra agree exactly.
+
+---
+
+## AI Wayback Machine
+
+**Joseph Fourier** showed in 1822 that any periodic function can be decomposed into a sum of sines and cosines — Fourier series. The result reshaped not only mathematics but also physics, signal processing, and modern audio compression.
+
+**Run this:**
+
+```
+Who was Joseph Fourier, and how does Fourier analysis connect to the periodic functions we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Joseph Fourier"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how a square wave decomposes into a Fourier series — which sine and cosine terms add up to it?
+- Ask it about Fourier's parallel role as governor of Egypt under Napoleon — and how that work shaped his physics.
+
+What changes? What gets better? What gets worse?

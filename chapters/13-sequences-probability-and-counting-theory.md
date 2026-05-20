@@ -195,3 +195,37 @@ The patterns found in this chapter have echoes everywhere — in computer scienc
 This is the last chapter of college algebra. The subject has traveled from the arithmetic of real numbers, through equations and functions, through polynomials and exponentials and logarithms and trigonometry, to the discrete tools of sequences and counting. These are not thirteen unrelated topics. They are a single connected language for describing quantitative structure — the language that the sciences, the social sciences, and engineering all share as their mathematical foundation.
 
 The repeating decimal $0.\overline{36}$ is $\frac{4}{11}$. The room of 23 people has better than even odds of containing a shared birthday. Both results are surprising. Both are certain. That combination — surprising but certain — is what mathematics produces when it works correctly.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 13.1 — Infinite sums that converge.** Tell an LLM: "How can an infinite sum equal a finite number? The intuition is that adding infinitely many positive things should give infinity." Push for the precise condition: a geometric series $\sum_{n=0}^{\infty} ar^n$ converges if and only if $|r| < 1$, and the sum equals $a/(1-r)$. Then ask: "Why does $|r| < 1$ make all the difference?" The LLM should explain: each successive term is *less than* a fixed fraction of the previous, so the sum is bounded. Probe: "What about the harmonic series $1 + 1/2 + 1/3 + 1/4 + \dots$ — that's a sum of decreasing terms but it diverges. Why?" Force the explanation that the terms don't shrink fast enough.
+
+**LLM Exercise 13.2 — Why $C(n,k)$ appears in the binomial theorem.** Ask an LLM: "When you expand $(a + b)^n$, the coefficient of $a^{n-k}b^k$ is $C(n,k)$. Why?" Push for the combinatorial argument, not the algebraic one: each term in the expansion comes from choosing either $a$ or $b$ from each of the $n$ factors. To get a term with $k$ copies of $b$, you need to *choose* which $k$ of the $n$ factors contribute the $b$ — and there are exactly $C(n,k)$ such choices. Then ask: "Why is this the same coefficient that appears in Pascal's triangle?" The answer: Pascal's triangle counts the same combinatorial selections.
+
+**LLM Exercise 13.3 — When the multiplication principle fails.** Tell an LLM: "If I have 5 shirts and 3 pants, the multiplication principle says I can make $5 \times 3 = 15$ outfits. But what if my pants don't go with one specific shirt — do I still get 15?" The answer: no. The multiplication principle requires *independence* — every shirt goes with every pant. Then ask: "Give me three real-world counting situations where the multiplication principle would silently fail because of unstated dependencies." Probe whether the LLM identifies dependencies of the right kind (e.g., a route that requires you to pick up one specific item; a menu where ordering an entrée forces the side; a sports schedule where home/away alternates).
+
+**LLM Exercise 13.4 — Conditional vs. joint probability.** Ask an LLM: "In a deck of 52 cards, what is the probability of drawing a king? What is the probability of drawing a king *given* that you drew a face card?" The first is $4/52 = 1/13$; the second is $4/12 = 1/3$. Then ask: "Why are these so different?" Push for the explanation that conditional probability restricts the sample space to the conditioning event. Then ask: "Construct a real-world example where the conditional probability is *smaller* than the unconditional probability." The answer requires the conditioning event to make the target event less likely.
+
+**LLM Exercise 13.5 — The birthday problem.** Tell an LLM: "In a room of 23 people, what is the probability that two people share a birthday?" The answer is approximately 50%. Then ask: "Why does intuition say this should be much smaller — most people guess that you need 100+ people for a 50% chance." Push for the explanation that intuition tracks the wrong probability — we instinctively imagine *matching one specific birthday*, but the question allows *any* two people to match. With 23 people, there are $C(23, 2) = 253$ pairs. Each pair has a 1/365 chance — and 253 chances accumulates fast. Then ask: "How does the answer change with 50 people? With 100?" The LLM should give approximately 97% and 99.99996% respectively. The lesson: combinatorial growth dominates intuition.
+
+---
+
+## AI Wayback Machine
+
+**Sofia Kovalevskaya** was the first woman to earn a doctorate in mathematics (in 1874) — and her later work on partial differential equations, combinatorics, and elliptic functions reshaped multiple subfields. She spent most of her career at the University of Stockholm because no Russian university would hire her.
+
+**Run this:**
+
+```
+Who was Sofia Kovalevskaya, and how does her mathematical work connect to the sequences, probability, and counting theory we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Sofya Kovalevskaya"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it about Kovalevskaya's "Cauchy-Kovalevskaya theorem" and what it does for partial differential equations.
+- Ask it about her parallel career as a novelist and the autobiographical novel *Nihilist Girl*.
+
+What changes? What gets better? What gets worse?

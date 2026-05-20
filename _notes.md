@@ -97,3 +97,27 @@ Each chapter cold-opens in something concrete a reader has touched:
 - Citations restricted to source files. No external citation expansion (per workflow's NO FABRICATION rule).
 - Where a verifiable real-world figure is used (eccentricity of Earth's orbit, half-life of carbon-14, etc.), the value is mathematically standard but `[verify]` is left where appropriate for production sourcing.
 - The birthday-problem result in Chapter 13 is mathematically standard.
+
+---
+
+## 2026-05-12 — Completed LLM Exercises pattern (chs 5-13 added)
+
+The book now has consistent `## LLM Exercises` blocks across all 13 chapters. The existing 4 chapters (1-4) were left untouched — their format and quality set the standard. The nine gap chapters got new blocks in matching format.
+
+| Ch | Topic | 5 conceptual probes added |
+|---|---|---|
+| 05 — Polynomial and Rational | How many roots; end behavior reasoning; vertical asymptote vs hole; "function vs simplified expression"; box-from-flat-sheet optimization |
+| 06 — Exponential and Logarithmic | Why exponential dominates polynomial; what $\log_b(b) = 1$ actually says; change-of-base derivation; when the model breaks (bacterial colony); why logs are necessary |
+| 07 — Unit Circle, Sin/Cos | Why radians; two proofs of Pythagorean identity; what a negative angle means; coterminal angles; when right-triangle definition stops working |
+| 08 — Periodic Functions | Four parameters specify everything; why tangent has asymptotes (Ch 5 callback); arcsin's restricted range; when tides aren't sinusoidal; tangent as slope |
+| 09 — Trig Identities and Equations | Identity vs equation; geometric derivation of sum formula; half-angle ambiguity; counting solutions; why some identities verify one-sided |
+| 10 — Further Applications | Law of sines vs cosines + ambiguous case; why $r$ can be negative; multiplication by $i$ as rotation; parametric "memory"; what dot product computes |
+| 11 — Systems | Why three lines have 0/1/infinite intersections (never 2); Bézout intuition for nonlinear systems; what determinant tells you; feasible region geometry; why Gaussian elimination always works |
+| 12 — Analytic Geometry | Eccentricity unifies conics; why two foci; parabolic reflection; hyperbola asymptotes; polar form's price |
+| 13 — Sequences/Probability/Counting | Infinite sums that converge; why $C(n,k)$ in binomial theorem; when multiplication principle fails; conditional vs joint; birthday problem and why intuition fails |
+
+**Format consistency:** `## LLM Exercises` header + intro paragraph ("These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.") + 5 named prompts each (`**LLM Exercise N.M — Title.** [body]`). Each prompt asks the student to push the LLM past hand-waving to a precise mathematical reason, often with a follow-up that exposes the limit or counterexample.
+
+**Cross-chapter callbacks:** Ch 8 explicitly references Ch 5's rational-function asymptote distinction; Ch 11 builds on the geometry-of-systems intuition the chapter establishes. The exercises reflect the book's stated dependency structure.
+
+**No follow-ups flagged.** Pattern complete across all 13 chapters.

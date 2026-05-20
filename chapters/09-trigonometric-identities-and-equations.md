@@ -323,3 +323,37 @@ It is a small, interconnected structure. Every identity in the chapter either is
 ### Challenge
 
 **Exercise 9.9.** *Tests the structure of the identity catalog.* Starting only from the sum formulas for $\sin(A + B)$ and $\cos(A + B)$, derive the following in order, showing each step: (a) $\sin 2\theta$ and $\cos 2\theta$; (b) the power-reducing formula for $\sin^2\theta$; (c) the half-angle formula for $\sin(\theta/2)$; (d) the product-to-sum formula $\sin A \cos B = \frac{1}{2}[\sin(A+B) + \sin(A-B)]$. Each derivation should take no more than three lines. The goal is to see the entire chapter as four steps from two starting points. Difficulty: high.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 9.1 — Identity vs. equation.** Tell an LLM: "I claim that $\sin^2\theta + \cos^2\theta = 1$ is an *identity*, not an equation. What does that distinction actually mean — what would change if I called it an equation?" Push it to articulate that an identity is true for *every* value in its domain (no solution set; the whole domain is the solution set), while an equation typically has a finite or restricted solution set. Then ask: "How would I prove a proposed identity is *not* an identity?" The answer: find one counterexample. One value where the two sides disagree is enough.
+
+**LLM Exercise 9.2 — Why the sum formula is what it is.** Ask an LLM: "Derive $\sin(A + B) = \sin A \cos B + \cos A \sin B$ geometrically." Don't accept algebraic manipulation — push for the geometric construction (typically a unit-circle picture or a stack of triangles). Then ask: "Why doesn't $\sin(A+B) = \sin A + \sin B$ work?" Try it on $A = B = \pi/2$: $\sin\pi = 0$, but $\sin(\pi/2) + \sin(\pi/2) = 2$. The LLM should give a clear geometric reason for the failure of additivity.
+
+**LLM Exercise 9.3 — Half-angle ambiguity.** Ask an LLM: "The half-angle formula $\sin(\theta/2) = \pm\sqrt{(1 - \cos\theta)/2}$ has a $\pm$ sign. Why is that ambiguity necessary?" Force the explanation: $\theta$ pins down a unique sine value, but $\theta/2$ can land in different quadrants depending on which "version" of $\theta$ you mean (e.g., $\theta + 2\pi$ has half-angle $\theta/2 + \pi$, in a different quadrant). Then ask: "Given a specific $\theta$, how do I decide which sign to use?" The answer requires knowing which quadrant $\theta/2$ is in.
+
+**LLM Exercise 9.4 — How many solutions?** Tell an LLM: "Solve $2\sin\theta = 1$ for $\theta$ in radians. How many solutions does this have?" The answer: infinitely many ($\theta = \pi/6 + 2\pi k$ and $\theta = 5\pi/6 + 2\pi k$ for any integer $k$). Then ask: "Now restrict to $\theta \in [0, 2\pi)$." Two solutions. Then: "Now restrict further to $\theta \in [0, \pi/2]$." One solution. Probe: "What general rule determines how many solutions a trig equation has on a given interval?" Force the LLM to articulate the rule: count the periods that fit in the interval and how many times the equation is satisfied per period.
+
+**LLM Exercise 9.5 — Why some identities verify from one side, others need both.** Ask an LLM: "When verifying a trig identity, sometimes you can manipulate just one side until it matches the other. Other times you have to manipulate both sides until they meet in the middle. What determines which approach is needed?" Push it to articulate that the choice depends on which side has more structure to work with — typically you start from the more complex side. Then ask: "Why is it generally bad practice to multiply both sides of a proposed identity by a non-zero expression as a verification step?" The answer: that move is valid for equations (preserves solution sets) but invalid for identities (would let you "verify" things that aren't actually identities, by introducing the assumption you're trying to prove).
+
+---
+
+## AI Wayback Machine
+
+**Hipparchus of Nicaea** compiled the first known trigonometric table around 130 BCE — establishing trig as a discipline. Most of the identities we still teach today have a continuous lineage back to his calculations.
+
+**Run this:**
+
+```
+Who was Hipparchus, and how does his trigonometric work connect to the identities and equations we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Hipparchus"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how Hipparchus used trigonometric ratios to compute astronomical distances.
+- Ask it about Hipparchus's discovery of the precession of the equinoxes.
+
+What changes? What gets better? What gets worse?

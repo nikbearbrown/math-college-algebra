@@ -268,3 +268,24 @@ These exercises are designed to be explored conversationally with a language mod
 **LLM Exercise 1.4 — Factoring by design.** Give an LLM a trinomial you have not been able to factor, and ask it to explain which technique applies and why. Then ask: "Is there a polynomial over the integers that cannot be factored by any of the standard techniques?" Ask for a specific example and why it is considered *irreducible* over $\mathbb{Z}$.
 
 **LLM Exercise 1.5 — Domain restrictions.** Ask an LLM to simplify $\frac{x^2 - 4}{x - 2}$ and explain the domain restriction. Then ask: "What is the value of the *original* expression at $x = 2$?" and "What is the value of the *simplified* expression at $x = 2$?" Ask it to explain why those answers differ and what that means geometrically when you graph the two expressions.
+
+---
+
+## AI Wayback Machine
+
+**Brahmagupta** wrote the *Brāhmasphuṭasiddhānta* in 628 CE — establishing rules for zero, negative numbers, and arithmetic with both. The number system that makes modern algebra possible begins with him.
+
+**Run this:**
+
+```
+Who was Brahmagupta, and how does his work with zero and negative numbers connect to the algebraic prerequisites we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Brahmagupta"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through Brahmagupta's specific rules for operations with zero — including the one rule (division by zero) he got wrong.
+- Ask it about how Brahmagupta's ideas reached medieval Europe through Arabic translations.
+
+What changes? What gets better? What gets worse?

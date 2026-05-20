@@ -271,3 +271,37 @@ Substitution does it by explicit replacement. Elimination does it by adding rows
 The choice of method is a question of scale and convenience. For a $2 \times 2$ system by hand, substitution is fastest. For a $3 \times 3$ with messy coefficients, elimination or row reduction is safer. For a $100 \times 100$ system on a computer, Gaussian elimination is the standard. For a $2 \times 2$ where you need a formula for one variable in terms of the others, Cramer's Rule gives it directly.
 
 What none of these methods can do is solve a system that has no solution, or produce a unique solution from a system with infinitely many. The algebra faithfully reflects the geometry: parallel lines never intersect; coincident lines intersect everywhere. When the determinant is zero, or when elimination produces a row of zeros or a contradiction, the method is not failing — it's telling you the truth about the system.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 11.1 — Why three lines have 0, 1, or infinite intersections — never 2.** Tell an LLM: "Three distinct lines in the plane can have 0, 1, or infinitely many common intersection points. Why never exactly 2?" Force a clean geometric argument: two lines either are parallel (0), intersect at one point (1), or coincide (infinitely many). Adding a third line adds to those counts only by 0 or by reducing them. Two distinct lines can intersect in only one point — so any common intersection has at most 1 point unless all three coincide. The lesson: solution counts in linear systems are not arbitrary; they reflect geometry.
+
+**LLM Exercise 11.2 — Nonlinear systems break the count.** Ask an LLM: "How many solutions can a system of two equations have if one is a circle and the other is a line?" The answer: 0, 1, or 2, depending on whether the line misses, is tangent to, or crosses the circle. Then ask: "What if I have a circle and a parabola?" The maximum is 4. Force the LLM to articulate Bézout's intuition — the maximum number of intersections between two algebraic curves is bounded by the product of their degrees. Then probe: "When is the actual count *less* than that maximum?" The answer involves tangency, common factors, or the curves missing each other.
+
+**LLM Exercise 11.3 — What the determinant tells you.** Ask an LLM: "For the 2×2 system $ax + by = e$, $cx + dy = f$, the determinant is $ad - bc$. What does it tell me, geometrically?" The expected answer: the determinant measures whether the two coefficient vectors $(a, b)$ and $(c, d)$ are linearly independent — i.e., whether the two lines have different slopes. Determinant zero means parallel (0 or infinite solutions); nonzero means a unique intersection. Then ask: "What does the magnitude of the determinant tell me?" The answer: it's the area of the parallelogram spanned by the coefficient vectors — and that area scales with how "robust" the unique solution is to numerical perturbation.
+
+**LLM Exercise 11.4 — The feasible region.** Tell an LLM: "I have three inequalities defining a feasible region in the plane. What does the feasible region look like, geometrically?" The answer: the intersection of three half-planes — a polygon (possibly unbounded). Then ask: "If I want to maximize a linear function $z = px + qy$ over this region, where will the maximum occur?" Force the explanation: at a *vertex* of the feasible region (or along an edge if the gradient is parallel to the edge). Then probe: "What if the feasible region is unbounded?" The maximum may not exist.
+
+**LLM Exercise 11.5 — Why Gaussian elimination always works.** Ask an LLM: "Gaussian elimination always reduces a system to a form where I can read off the solution. Why is this guaranteed to work for *any* system?" Push for the explanation that the three row operations (swap, scale, add multiple) preserve the solution set, so the reduced system has the same solutions as the original — and the reduced form makes them explicit. Then ask: "What does Gaussian elimination produce when the system has *no* solution?" The answer: a row equivalent to $0 = c$ for some nonzero $c$ — the contradiction. "What about when the system has *infinitely many* solutions?" A row of all zeros, signaling a free variable.
+
+---
+
+## AI Wayback Machine
+
+**Carl Friedrich Gauss** developed the method of elimination for solving systems of linear equations — now called Gaussian elimination — in 1809. His method is the basis of every modern computational linear-algebra routine.
+
+**Run this:**
+
+```
+Who was Carl Friedrich Gauss, and how does Gaussian elimination connect to the systems of equations we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Carl Friedrich Gauss"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through Gaussian elimination on a 3×3 system.
+- Ask it about Gauss's habit of not publishing results — and what the field lost because of it.
+
+What changes? What gets better? What gets worse?

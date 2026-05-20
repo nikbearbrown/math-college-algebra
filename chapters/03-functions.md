@@ -282,3 +282,24 @@ The single idea underneath all of this: **a function is a single-valued rule, an
 **Exercise 3-L4.** Describe to an AI a function that is odd but not one-to-one, and ask whether its inverse exists. Then ask the same about a function that is one-to-one but neither even nor odd. Evaluate whether the AI correctly applies the one-to-one requirement (not the even/odd symmetry) as the criterion for invertibility. Write a paragraph summarizing what the AI got right and where it conflated the two ideas, if it did.
 
 **Exercise 3-L5.** Ask an AI to give you a real-world situation that is *not* a function, explain why it is not, and then show how you could modify the situation so it becomes a function. Evaluate the response: does the modification genuinely restore the one-output-per-input property, or does it just restate the original situation with different words?
+
+---
+
+## AI Wayback Machine
+
+**Leonhard Euler** introduced the modern function notation *f(x)* in 1734 — and built much of the theory of functions in the 1740s. His notation is so successful that we rarely notice it.
+
+**Run this:**
+
+```
+Who was Leonhard Euler, and how does his work on functions connect to what we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Leonhard Euler"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to list five other pieces of standard mathematical notation we owe to Euler.
+- Ask it about Euler's prolific output despite becoming blind in his later years.
+
+What changes? What gets better? What gets worse?

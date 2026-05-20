@@ -218,3 +218,37 @@ This is not a coincidence. It is the definition of the unit circle. Periodicity 
 This is why a single chapter on the unit circle is worth spending time on, even before we graph the wave shapes in Chapter 8. The wave shapes are the display; the unit circle is the machinery. And the machinery is simple: one circle, one radius, two coordinates. Sine is the height. Cosine is the horizontal displacement. Everything else — the identities, the special values, the reference angle technique, the connection to circular motion — is a consequence of where those two coordinates live.
 
 The Ferris wheel car was always there. The unit circle is just how we describe its position precisely.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 7.1 — Why radians?** Ask an LLM: "Why do mathematicians prefer radians over degrees? What goes wrong if I just use degrees everywhere?" Push it past "convention" to the actual mathematical reason — the arc length formula $s = r\theta$ requires radians; the derivative of $\sin x$ equals $\cos x$ only in radians. Then ask: "If degrees are unnatural, why did humans invent them in the first place?" Probe the historical answer (360 has many divisors; Babylonian base 60).
+
+**LLM Exercise 7.2 — Why $\sin^2\theta + \cos^2\theta = 1$.** Ask an LLM to prove the Pythagorean identity in two different ways — first using the unit circle and the Pythagorean theorem, then using the right-triangle definitions and the same theorem. They should reach the same conclusion. Then ask: "Are these really two different proofs, or two presentations of the same proof?" The answer should clarify that the unit circle definition extends the right-triangle definition to all real angles, but both rely on Pythagoras.
+
+**LLM Exercise 7.3 — What does a negative angle mean?** Ask an LLM: "What is the difference between an angle of $-30°$ and an angle of $330°$?" The expected answer: they have the same terminal side (they're coterminal), so all trig values agree. Then ask: "Then why bother with negative angles at all?" Force it to explain that negative angles encode *direction* of rotation (clockwise vs. counterclockwise), which matters when an angle represents motion or change.
+
+**LLM Exercise 7.4 — Coterminal angles share trig values.** Tell an LLM: "I claim that $\sin(\theta + 360°) = \sin(\theta)$ for every $\theta$. Why?" Push it to explain via the unit circle — same terminal point, same coordinates, same sine value. Then ask: "Is the same true for $\sin(\theta + 180°)$?" The answer is no — the terminal side is opposite, the $y$-coordinate flips sign, so $\sin(\theta + 180°) = -\sin(\theta)$. Probe the geometric reason.
+
+**LLM Exercise 7.5 — When the right-triangle definition stops working.** Tell an LLM: "I'm on a Ferris wheel that rotates from the 3 o'clock position. After 270° of rotation, what is my $y$-coordinate relative to the center?" The answer involves $\sin(270°) = -1$. Then ask: "What right triangle is being used to compute this? It can't be a right triangle in the traditional sense — there's no triangle when the angle is 270°." Force the LLM to explain that the unit-circle definition is necessary precisely because right triangles only handle acute angles in the first quadrant.
+
+---
+
+## AI Wayback Machine
+
+**Madhava of Sangamagrama** developed the infinite series for sine and cosine in 14th-century Kerala — two centuries before Newton and Leibniz. The "Madhava-Leibniz series" for π is named jointly to recognize his priority.
+
+**Run this:**
+
+```
+Who was Madhava of Sangamagrama, and how does his work on trigonometric series connect to the unit-circle sine and cosine functions we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Madhava of Sangamagrama"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through Madhava's series for sin(x) and how it converges.
+- Ask it about the Kerala school of astronomy and mathematics — and why its work was unknown to Europe for centuries.
+
+What changes? What gets better? What gets worse?

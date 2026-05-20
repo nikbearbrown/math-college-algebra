@@ -256,3 +256,37 @@ The same curves appear in optics because light bouncing off a mirror obeys a ref
 ### Challenge
 
 **Exercise 12.9.** *Tests integration of all three conics.* A reflecting telescope has a parabolic primary mirror with focus at point $F_1$, and a small hyperbolic secondary mirror whose nearer focus also sits at $F_1$ and whose farther focus $F_2$ is behind the primary mirror (where the eyepiece is). (a) Explain in terms of the distance conditions why a ray parallel to the telescope axis, after reflecting off the parabolic mirror toward $F_1$, will then reflect off the hyperbolic mirror toward $F_2$. (b) If the parabolic mirror has equation $x^2 = 200y$ (in mm) and the hyperbolic secondary has $a = 30$ mm and $c = 110$ mm, write the equation of the hyperbola centered at the origin with transverse axis along the $y$-axis. (c) Verify that the shared focus condition is physically consistent given the mirror geometry. Difficulty: high.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 12.1 — Eccentricity unifies the conics.** Ask an LLM: "Eccentricity $e = 0$ gives a circle, $0 < e < 1$ gives an ellipse, $e = 1$ gives a parabola, and $e > 1$ gives a hyperbola. Why does a single number control all four shapes?" Force the geometric explanation: each conic is defined by a fixed ratio between the distance to a focus and the distance to a directrix; that ratio is exactly $e$. Then ask: "What is the eccentricity of Earth's orbit?" The LLM should give approximately $0.0167$ — extremely close to a circle. Probe: "If the eccentricity were $0.5$, what would Earth's climate look like?"
+
+**LLM Exercise 12.2 — Why an ellipse has two foci.** Tell an LLM: "An ellipse is defined by the property that the sum of distances from a point on the curve to two fixed foci is constant. Why two foci, not one?" Push it to explain that one fixed-distance condition gives a circle (radius = constant); two fixed points with sum-of-distances constant gives an ellipse. Then ask: "What's the optical consequence of the two-focus property?" The answer: light or sound emitted from one focus reflects off the ellipse and converges at the other focus — the basis of whispering galleries.
+
+**LLM Exercise 12.3 — Parabolic reflection.** Ask an LLM: "Why do all parallel rays striking a parabolic dish converge at the focus?" Push for the geometric proof — every point on the parabola is equidistant from the focus and the directrix; that geometric symmetry forces the reflection angle to send incoming parallel rays through the focus. Then ask: "What real technologies depend on this property, and what would happen if we used a sphere or an ellipse instead?" The LLM should mention satellite dishes, headlights, and solar collectors, and explain why a sphere produces spherical aberration.
+
+**LLM Exercise 12.4 — The hyperbola's asymptotes.** Tell an LLM: "Why does a hyperbola have asymptotes — why does the curve approach two straight lines as $x$ grows large?" Push for the algebraic argument: as $x \to \infty$, the hyperbola's equation $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ effectively becomes $\frac{x^2}{a^2} = \frac{y^2}{b^2}$, giving $y = \pm(b/a)x$. Then ask: "Why don't ellipses have asymptotes?" Force the explanation that ellipses are bounded; hyperbolas extend to infinity, and unbounded curves often acquire asymptotic behavior.
+
+**LLM Exercise 12.5 — Polar form's price.** Ask an LLM: "The polar form $r = \frac{ed}{1 - e\cos\theta}$ describes all conics with one formula. What's the price of this unification?" Push for the trade-off: simplicity and unification, at the cost of obscuring the conic-specific parameters that the Cartesian forms make obvious (semi-major / semi-minor axis lengths, exact vertex locations, asymptote slopes). Then ask: "When would I actually prefer the polar form to the Cartesian form?" The answer: when working with orbital mechanics (satellites and planets), where the focus is the natural origin.
+
+---
+
+## AI Wayback Machine
+
+**Pierre de Fermat** developed analytic geometry independently of (and slightly before) Descartes — though Descartes published first. Fermat's *Ad Locos Planos et Solidos Isagoge* showed how algebraic equations could describe curves.
+
+**Run this:**
+
+```
+Who was Pierre de Fermat, and how does his analytic geometry work connect to what we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Pierre de Fermat"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to compare Fermat's and Descartes's versions of analytic geometry — what each got right.
+- Ask it about Fermat's day job as a magistrate, and how mathematics fit into a working lawyer's life.
+
+What changes? What gets better? What gets worse?

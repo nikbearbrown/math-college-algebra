@@ -281,3 +281,37 @@ Rational functions inherit polynomials' smoothness wherever the denominator is n
 The quadratic is a special case of the polynomial, which is a special case of the rational (with denominator 1). Each generalization adds expressiveness at the cost of one more set of features to track. Polynomials require monitoring degree, leading coefficient, and zeros. Rationals require all of that plus domain, asymptotes, and holes.
 
 The through-line is the same idea from Chapter 2: an equation is a relationship written in symbols. A function is a rule for turning inputs into outputs. A graph is a picture of that rule. The polynomial and rational function chapters add new rules — more complicated, more expressive — but the translation between words, symbols, and pictures works the same way it always did. Set up the relationship. Identify the features. Draw the picture. Answer the question.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 5.1 — How many roots can a polynomial have?** Tell an LLM: "A degree-5 polynomial can have at most 5 real roots. Why exactly 5, and not more?" Ask it to explain the Fundamental Theorem of Algebra and the distinction between *real* roots and *complex* roots. Then ask: "Can a degree-5 polynomial have *zero* real roots? If yes, give me an example. If no, prove it." What does it say?
+
+**LLM Exercise 5.2 — End behavior, in plain reasoning.** Give an LLM the polynomial $-3x^4 + 2x^3 - x + 7$ and ask: "Why does end behavior depend only on the leading term, and not on any of the others?" Push it to explain *why* — at very large $|x|$, why does $-3x^4$ swamp $2x^3 - x + 7$? Then ask: "At what value of $x$ does the leading term start dominating, in this specific polynomial?" The answer requires comparing magnitudes — see if the LLM gives a number or hand-waves.
+
+**LLM Exercise 5.3 — Vertical asymptote vs. hole.** Ask an LLM: "If the numerator and denominator of a rational function both equal zero at $x = a$, do you get a vertical asymptote or a hole — or could it be either?" Push for the precise condition: a hole occurs when a factor cancels; an asymptote occurs when it doesn't. Then ask: "Construct a rational function with a hole at $x = 2$ and a vertical asymptote at $x = -3$, and graph it." Verify the construction.
+
+**LLM Exercise 5.4 — When the function "doesn't exist."** Give an LLM the rational function $f(x) = \frac{x^2 - 9}{x^2 - 9}$ and ask what its graph looks like. The expected answer is *the horizontal line $y = 1$ with holes at $x = \pm 3$*. If the LLM says simply $y = 1$, push back: "But what is $f(3)$? What is $0/0$?" Force it to distinguish *the function* from *the simplified expression*. The two are not the same object.
+
+**LLM Exercise 5.5 — Optimization and the bend.** Tell an LLM: "I'm building an open-top box from a 12-by-12 inch sheet by cutting equal squares from each corner and folding up the sides. Why does this problem have a maximum volume — why can't the volume just keep increasing?" Push it to explain the trade-off between base area (shrinks as cut size grows) and height (grows). Then ask it to find the optimum by setting up $V(x)$ and explain *why* this curve must have an interior maximum rather than maximizing at an endpoint.
+
+---
+
+## AI Wayback Machine
+
+**Évariste Galois** developed the theory connecting polynomial roots to group symmetries between 1828 and his death at age 20 in a duel — work that founded modern algebra. The night before the duel he wrote out as much of the theory as he could.
+
+**Run this:**
+
+```
+Who was Évariste Galois, and how does his work on polynomials connect to what we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Évariste Galois"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain why fifth-degree polynomials have no general formula in terms of radicals — Galois's central result.
+- Ask it about the duel — what we know and don't know about its cause.
+
+What changes? What gets better? What gets worse?

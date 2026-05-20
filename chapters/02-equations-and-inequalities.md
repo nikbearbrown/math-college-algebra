@@ -333,3 +333,24 @@ The following prompts are designed for extended engagement with a large language
 ---
 
 **LLM Exercise 2-F.** Describe the fencing optimization problem in this chapter to the LLM (homeowner, 40 feet of fencing, garden against the house). Ask it to: (a) solve it by completing the square, (b) solve it by calculus (derivative = 0) if you want a preview of where this goes, (c) explain why the maximum always occurs when the parallel side is twice the perpendicular side. Then vary the problem — 60 feet of fencing, or fencing on all four sides with a budget — and work the variations yourself before asking the LLM to check your setup.
+
+---
+
+## AI Wayback Machine
+
+**Diophantus of Alexandria** wrote *Arithmetica* around 250 CE — the first systematic treatment of equations and unknowns. He invented much of the notation that classical algebra eventually formalized.
+
+**Run this:**
+
+```
+Who was Diophantus of Alexandria, and how does his work on equations connect to what we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Diophantus"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to solve one of Diophantus's *Arithmetica* problems in modern notation.
+- Ask it about the famous riddle of Diophantus's age (the epitaph problem) — and whether it's plausibly autobiographical.
+
+What changes? What gets better? What gets worse?

@@ -263,3 +263,37 @@ The single idea connecting all of this: **exponential functions describe process
 ### Challenge
 
 **Exercise 6.9.** *Tests logistic model interpretation and equation-solving.* A city's population (in thousands) is modeled by $P(t) = \frac{400}{1 + 15e^{-0.08t}}$, where $t$ is years after 2000. (a) What was the population in 2000? (b) What is the carrying capacity, and what does it mean in context? (c) In what year does the population reach 200,000? (d) Is the population growing faster in year 10 or year 30? Explain without computing derivatives — use the shape of the logistic curve and the relationship between the current value and the carrying capacity. Difficulty: high.
+## LLM Exercises
+
+These exercises are designed to be explored conversationally with a language model. Rather than computing a single answer, each one asks you to probe a concept — to find where the rule applies, where it breaks, and why.
+
+**LLM Exercise 6.1 — Why exponential dominates polynomial.** Tell an LLM: "Eventually $2^x$ overtakes $x^{100}$, and stays ahead forever. At what value of $x$ does this happen, approximately?" Push for an actual estimate, not a hand-wave. Then ask: "Why does any exponential function with base $> 1$ eventually dominate any polynomial?" Force the explanation to use the *multiplicative* nature of exponentials versus the *additive* nature of polynomials. If the LLM says "because exponentials grow faster," push back — that's restating, not explaining.
+
+**LLM Exercise 6.2 — What $\log_b(b) = 1$ actually says.** Ask an LLM: "Why is $\log_b(b) = 1$ for every valid base $b$?" The answer should be: because the log is *defined* as the inverse — $\log_b(b) = 1$ asks "what power of $b$ gives $b$?" and the answer is 1, by definition. Then ask: "Why does $\log_b(1) = 0$ for every base?" Same logic — what power of $b$ gives 1. The point of this exercise is to internalize that logs are *exponents*, not separate operations.
+
+**LLM Exercise 6.3 — The change of base, made physical.** Ask an LLM: "Why does the change-of-base formula $\log_b(x) = \log_c(x) / \log_c(b)$ work?" Push it to derive the formula, not state it. Then ask: "If logarithms are just exponents, why does the calculator have only $\log$ and $\ln$ buttons — what's special about base 10 and base $e$?" The answer should distinguish *historical / engineering convenience* (base 10) from *mathematical naturalness* (base $e$). Probe what makes $e$ "natural."
+
+**LLM Exercise 6.4 — When the model breaks.** Give an LLM this scenario: "A bacterial colony doubles every 20 minutes. After 24 hours starting from 1 cell, how many cells are there?" Have it compute $2^{72}$. Then ask: "Is this answer realistic?" The answer is no — at $2^{72}$ cells the colony's mass would exceed Earth's. Have it estimate when the model breaks down (resource exhaustion, space constraint, predation). The lesson: exponential models are local approximations; they fail when their assumptions fail.
+
+**LLM Exercise 6.5 — Why logs are necessary for solving exponentials.** Tell an LLM: "I want to solve $3 \cdot 2^x = 100$. Why can't I just take the square root, or use any of the techniques that work for polynomials?" Push it to explain *why* the variable in the exponent makes algebraic manipulation insufficient — you cannot "undo" exponentiation without an inverse function. Then ask: "What would mathematics look like if logarithms had never been invented? What problems would be unsolvable?"
+
+---
+
+## AI Wayback Machine
+
+**John Napier** invented logarithms in 1614 — a calculation tool that reduced multiplication of large numbers to addition. His tables revolutionized astronomy and navigation by cutting computation time by a factor of ten.
+
+**Run this:**
+
+```
+Who was John Napier, and how do logarithms connect to what we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"John Napier"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how Napier's original logarithm tables would let an astronomer multiply two large numbers in seconds.
+- Ask it about Napier's other inventions, including "Napier's bones" and a hydraulic screw for draining mines.
+
+What changes? What gets better? What gets worse?

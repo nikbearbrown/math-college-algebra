@@ -214,3 +214,24 @@ These exercises are designed to be explored conversationally with a language mod
 **LLM Exercise 4.4 — Correlation vs. causation.** Tell an LLM: "A study finds that ice cream sales and drowning rates are strongly correlated — when ice cream sales go up, drowning rates go up. Does eating ice cream cause drowning?" Ask it to explain the concept of a *confounding variable* and give two other examples of correlations that are not causal. Then ask: "Can a line of best fit ever prove causation?"
 
 **LLM Exercise 4.5 — When is a relationship linear?** Give an LLM this table of $(x, y)$ values: $(0, 1), (1, 2), (2, 4), (3, 8), (4, 16)$. Ask whether the relationship is linear and how it can tell. Then ask it to construct a table that *looks* linear from the first two points but isn't. What does that reveal about the risk of fitting a line to limited data?
+
+---
+
+## AI Wayback Machine
+
+**René Descartes** introduced the coordinate system bearing his name in *La Géométrie* in 1637 — letting algebra and geometry talk to each other for the first time. Every line graph and linear function lives on his grid.
+
+**Run this:**
+
+```
+Who was René Descartes, and how does his coordinate system connect to the linear functions we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"René Descartes"** on Wikipedia.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how Descartes mapped one specific geometric problem onto algebra.
+- Ask it about Descartes's parallel role in early modern philosophy — the cogito and beyond.
+
+What changes? What gets better? What gets worse?
