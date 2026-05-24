@@ -10,7 +10,8 @@ Here is something that happens every day on the New Jersey Turnpike. A driver pu
 
 $$x + 8.50 = 10$$
 
-<!-- → [IMAGE: photograph or line illustration of a toll booth display showing $8.50 and a hand extending a $10 bill — anchors the abstract equation to the physical situation the reader just read about] -->
+![Photograph or line illustration of a toll booth](images/02-equations-and-inequalities-fig-01.png)
+*Figure 2.1 — Photograph or line illustration of a toll booth*
 
 The answer is $x = 1.50$. Done.
 
@@ -34,7 +35,8 @@ x &= 5 && \text{divide both sides by 3}
 
 The legitimacy of each step is one idea: *equality is preserved when you do the same thing to both sides*. Not "almost preserved." Not "preserved if you're careful." Preserved, exactly, every time, as long as you do the same operation to both sides.
 
-<!-- → [INFOGRAPHIC: two-column "balance scale" diagram showing $3x + 7 = 22$ as a balanced scale, then each operation (subtract 7, divide by 3) applied to both pans simultaneously — the scale stays balanced at each step; student should see why doing the same thing to both sides is the only valid move] -->
+![Two-column "balance scale" diagram showing $3x + 7](images/02-equations-and-inequalities-fig-02.png)
+*Figure 2.2 — Two-column "balance scale" diagram showing $3x + 7*
 
 Check: $3(5) + 7 = 22$. Yes. Checking is not optional ceremony — it's the only way to know you didn't make an arithmetic slip somewhere in the middle.
 
@@ -92,7 +94,9 @@ $$ax^2 + bx + c = 0, \quad a \neq 0$$
 
 There are four methods for solving it. They are not equally useful in all situations.
 
-<!-- → [TABLE: decision guide for quadratic method selection — columns: method name, when to use it, when NOT to use it, example equation type; rows: factoring, square-root property, completing the square, quadratic formula — student should use this as a quick-reference flowchart before solving any quadratic] -->
+| method name | when to use it | when NOT to use it | example equation type |
+| --- | --- | --- | --- |
+| factoring, square-root property, completing the square, quadratic formula | student should use this as a quick-reference flowchart before solving any quadratic | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. |
 
 ### Factoring
 
@@ -149,7 +153,8 @@ The expression under the square root, $b^2 - 4ac$, is called the *discriminant*.
 - $b^2 - 4ac = 0$: one repeated solution
 - $b^2 - 4ac < 0$: no real solutions — but two complex ones
 
-<!-- → [IMAGE: three side-by-side parabolas (all opening upward) — left parabola crosses x-axis at two points (discriminant > 0), center parabola touches x-axis at exactly one point (discriminant = 0), right parabola floats entirely above x-axis (discriminant < 0); each labeled with its discriminant case; student should see the geometric meaning of each case before reading the complex-numbers section] -->
+![Three side-by-side parabolas (all opening upward) ](images/02-equations-and-inequalities-fig-03.png)
+*Figure 2.3 — Three side-by-side parabolas (all opening upward) *
 
 The third case deserves its own treatment.
 
@@ -200,7 +205,8 @@ A range of real numbers is most compactly written in *interval notation*. The co
 
 So "$x$ is at least $-2$ and strictly less than $5$" writes as $[-2, 5)$.
 
-<!-- → [INFOGRAPHIC: number line showing five interval-notation examples side by side — $(a,b)$ with open circles, $[a,b]$ with closed circles, $[a,b)$ mixed, $(a, \infty)$ with arrow, $(-\infty, \infty)$ full line; each labeled with its notation and plain-English meaning; student should have this as a reference when first reading interval answers] -->
+![Number line showing five interval-notation examples side by](images/02-equations-and-inequalities-fig-04.png)
+*Figure 2.4 — Number line showing five interval-notation examples side by*
 
 ### Solving linear inequalities
 
@@ -210,7 +216,8 @@ Multiplying or dividing both sides by a *negative number* reverses the inequalit
 
 Why? Consider $2 < 5$. Multiply by $-1$: $-2 > -5$. The original order flipped. On the number line, multiplying by a negative reflects everything through zero, and reflections reverse the order of points.
 
-<!-- → [IMAGE: number line showing $2$ and $5$ with an arrow indicating "multiply by $-1$" and the resulting positions $-2$ and $-5$, with the inequality sign explicitly flipping direction; the reflection through zero should be visually clear — this is the one rule students consistently forget and a picture cements why it's true] -->
+![Number line showing $2$ and $5$ with an](images/02-equations-and-inequalities-fig-05.png)
+*Figure 2.5 — Number line showing $2$ and $5$ with an*
 
 $$5 - 2x \geq 11 \implies -2x \geq 6 \implies x \leq -3$$
 
@@ -240,7 +247,8 @@ $|x| < 3$ means: all $x$ within distance 3 of zero. That's $-3 < x < 3$.
 
 $|x| > 3$ means: all $x$ farther than distance 3 from zero. That's $x < -3$ or $x > 3$.
 
-<!-- → [IMAGE: number line with zero at center — two diagrams stacked: top shows $|x| < 3$ with a shaded interval between $-3$ and $3$ (the "within distance 3" region); bottom shows $|x| > 3$ with shading on both outer rays beyond $-3$ and $3$ (the "farther than distance 3" regions); student should see why one case is an intersection and the other is a union before reading the formula] -->
+![Number line with zero at center ](images/02-equations-and-inequalities-fig-06.png)
+*Figure 2.6 — Number line with zero at center *
 
 In general:
 
@@ -300,7 +308,8 @@ The product is negative when the two factors have opposite signs. That happens w
 
 So: the homeowner gets more than 150 square feet of garden when the perpendicular dimension is between 5 and 15 feet. The sweet spot — the maximum — is at exactly 10 feet. The same piece of land, the same fence, described three ways: as an algebraic expression, as a quadratic extremum, as an inequality with a range solution. All three descriptions are about the same situation. The different forms exist because we asked different questions.
 
-<!-- → [IMAGE: two-panel figure — left panel: top-down diagram of the rectangular garden with the house as one wall, the two perpendicular sides labeled $x$, and the parallel side labeled $40-2x$; right panel: downward-opening parabola $A = 40x - 2x^2$ with vertex marked at $(10, 200)$, zeros at $x=0$ and $x=20$, horizontal dashed line at $A=150$ intersecting the curve at $x=5$ and $x=15$, and the interval $(5,15)$ shaded on the x-axis — student should see the geometry, the algebra, and the inequality solution all in one picture] -->
+![Figure ](images/02-equations-and-inequalities-fig-07.png)
+*Figure 2.7 — Figure *
 
 That's the honest summary of this chapter. One question: what value makes this sentence true? Three sentence types — linear, quadratic, inequality — each requiring its own set of moves, all driven by the same organizing idea: *undo what was done to the unknown until it stands alone*.
 
@@ -354,3 +363,69 @@ Who was Diophantus of Alexandria, and how does his work on equations connect to 
 - Ask it about the famous riddle of Diophantus's age (the epitaph problem) — and whether it's plausibly autobiographical.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 2.1 — Photograph or line illustration of a toll booth
+
+Create a standalone D3 v7 HTML file for Figure Photograph or line illustration of a toll booth. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: photograph or line illustration of a toll booth display showing $8.50 and a hand extending a $10 bill — anchors the abstract equation to the physical situation the reader just read about. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/02-equations-and-inequalities-fig-01.html`
+
+---
+
+### Figure 2.2 — Two-column "balance scale" diagram showing $3x + 7
+
+Create a standalone D3 v7 HTML file for Figure Two-column "balance scale" diagram showing $3x + 7. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: two-column "balance scale" diagram showing $3x + 7 = 22$ as a balanced scale, then each operation (subtract 7, divide by 3) applied to both pans simultaneously — the scale stays balanced at each step; student should see why doing the same thing to both sides is the only valid move. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/02-equations-and-inequalities-fig-02.html`
+
+---
+
+### Figure 2.3 — Three side-by-side parabolas (all opening upward) 
+
+Create a standalone D3 v7 HTML file for Figure Three side-by-side parabolas (all opening upward) . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: three side-by-side parabolas (all opening upward) — left parabola crosses x-axis at two points (discriminant > 0), center parabola touches x-axis at exactly one point (discriminant = 0), right parabola floats entirely above x-axis (discriminant < 0); each labeled with its discriminant case; student should see the geometric meaning of each case before reading the complex-numbers section. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/02-equations-and-inequalities-fig-03.html`
+
+---
+
+### Figure 2.4 — Number line showing five interval-notation examples side by
+
+Create a standalone D3 v7 HTML file for Figure Number line showing five interval-notation examples side by. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: number line showing five interval-notation examples side by side — $(a,b)$ with open circles, $[a,b]$ with closed circles, $[a,b)$ mixed, $(a, \infty)$ with arrow, $(-\infty, \infty)$ full line; each labeled with its notation and plain-English meaning; student should have this as a reference when first reading interval answers. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/02-equations-and-inequalities-fig-04.html`
+
+---
+
+### Figure 2.5 — Number line showing $2$ and $5$ with an
+
+Create a standalone D3 v7 HTML file for Figure Number line showing $2$ and $5$ with an. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: number line showing $2$ and $5$ with an arrow indicating "multiply by $-1$" and the resulting positions $-2$ and $-5$, with the inequality sign explicitly flipping direction; the reflection through zero should be visually clear — this is the one rule students consistently forget and a picture cements why it's true. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/02-equations-and-inequalities-fig-05.html`
+
+---
+
+### Figure 2.6 — Number line with zero at center 
+
+Create a standalone D3 v7 HTML file for Figure Number line with zero at center . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: number line with zero at center — two diagrams stacked: top shows $|x| < 3$ with a shaded interval between $-3$ and $3$ (the "within distance 3" region); bottom shows $|x| > 3$ with shading on both outer rays beyond $-3$ and $3$ (the "farther than distance 3" regions); student should see why one case is an intersection and the other is a union before reading the formula. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/02-equations-and-inequalities-fig-06.html`
+
+---
+
+### Figure 2.7 — Figure 
+
+Create a standalone D3 v7 HTML file for Figure Figure . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: two-panel figure — left panel: top-down diagram of the rectangular garden with the house as one wall, the two perpendicular sides labeled $x$, and the parallel side labeled $40-2x$; right panel: downward-opening parabola $A = 40x - 2x^2$ with vertex marked at $(10, 200)$, zeros at $x=0$ and $x=20$, horizontal dashed line at $A=150$ intersecting the curve at $x=5$ and $x=15$, and the interval $(5,15)$ shaded on the x-axis — student should see the geometry, the algebra, and the inequality solution all in one picture. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/02-equations-and-inequalities-fig-07.html`

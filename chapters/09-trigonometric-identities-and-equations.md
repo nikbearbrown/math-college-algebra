@@ -39,7 +39,8 @@ Three identities from one geometric fact. This is the pattern throughout the cha
 
 There are also the reciprocal identities — $\sec\theta = 1/\cos\theta$, $\csc\theta = 1/\sin\theta$, $\cot\theta = 1/\tan\theta$ — and the quotient identities: $\tan\theta = \sin\theta/\cos\theta$ and $\cot\theta = \cos\theta/\sin\theta$. These are definitions as much as identities. And the even/odd identities: sine and tangent are odd ($\sin(-\theta) = -\sin\theta$, $\tan(-\theta) = -\tan\theta$), cosine is even ($\cos(-\theta) = \cos\theta$). The graph of cosine is symmetric about the vertical axis; the graph of sine is symmetric about the origin.
 
-<!-- → [IMAGE: unit circle with a point at angle θ labeled (cos θ, sin θ), a right triangle drawn from the origin to the point to the x-axis, and the Pythagorean identity written beside it — student should see that sin²θ + cos²θ = 1 is just x² + y² = 1 read in trig notation, not a separate fact to memorize] -->
+![Unit circle with a point at angle θ](images/09-trigonometric-identities-and-equations-fig-01.png)
+*Figure 9.1 — Unit circle with a point at angle θ*
 
 ---
 
@@ -80,7 +81,12 @@ $$\sin\!\left(\frac{\pi}{2} - \theta\right) = \sin\frac{\pi}{2}\cos\theta - \cos
 
 The cofunction identities — sine and cosine are complements, tangent and cotangent are complements, secant and cosecant are complements — all fall out of the sum and difference formulas in exactly this way.
 
-<!-- → [TABLE: two-column reference table — left: sum/difference formula; right: the sign rule in plain English ("cosine: signs flip"; "sine: signs follow"; "tangent: denominator flips") — student should be able to reconstruct the formula from the rule rather than memorizing each line independently] -->
+| Item | Meaning |
+| --- | --- |
+| left: sum | difference formula |
+| right: the sign rule in plain English ("cosine: signs flip" | A concrete checkpoint for applying the chapter concept. |
+| "sine: signs follow" | A concrete checkpoint for applying the chapter concept. |
+| "tangent: denominator flips") | student should be able to reconstruct the formula from the rule rather than memorizing each line independently |
 
 ---
 
@@ -108,7 +114,8 @@ Three equivalent forms of the cosine double-angle formula. They are all the same
 
 For tangent: $\tan 2\theta = \frac{2\tan\theta}{1 - \tan^2\theta}$, from the tangent sum formula with $A = B = \theta$.
 
-<!-- → [INFOGRAPHIC: derivation tree showing the sum formulas at the top, with arrows branching down — one branch: set A = B to get double-angle formulas; second branch: solve double-angle for θ/2 to get half-angle formulas; third branch: add sum and difference formulas to get product-to-sum formulas — student should see the entire chapter's identity catalog as a single derivation tree with two source formulas at the root] -->
+![Derivation tree showing the sum formulas at the](images/09-trigonometric-identities-and-equations-fig-02.png)
+*Figure 9.2 — Derivation tree showing the sum formulas at the*
 
 ### Half angles
 
@@ -168,7 +175,8 @@ $$\cos u + \cos v = 2\cos\frac{u+v}{2}\cos\frac{u-v}{2}$$
 
 This is where the engineer's signal problem lives. Adding two sinusoids of different frequencies produces a *beating* pattern — the amplitude rises and falls at the difference frequency while oscillating at the average frequency. Physically: two guitar strings slightly out of tune produce a sound that pulses at the difference in their frequencies. Mathematically: that pulsing is exactly the product-to-sum formula at work.
 
-<!-- → [IMAGE: graph showing sin(2π·440t) + sin(2π·660t) over a short time window — the rapid oscillation at the average frequency (550 Hz) is visibly modulated by a slower envelope at the difference frequency (220 Hz / 2 = 110 Hz); student should see the beating pattern and connect it to the sum-to-product formula that produces a product of a fast oscillation and a slow amplitude envelope] -->
+![Graph showing sin(2π·440t) + sin(2π·660t) over a short](images/09-trigonometric-identities-and-equations-fig-03.png)
+*Figure 9.3 — Graph showing sin(2π·440t) + sin(2π·660t) over a short*
 
 ---
 
@@ -213,7 +221,8 @@ For tangent: period is $\pi$, not $2\pi$. $\tan\theta = c$ gives $\theta = \tan^
 
 The pattern to internalize: use the inverse function to get one solution, then use the symmetry of the function to find the rest within one period, then append the periodic repetition.
 
-<!-- → [IMAGE: three unit-circle diagrams side by side — one for sine showing the two solutions θ and π − θ that share the same sine value; one for cosine showing the two solutions θ and −θ; one for tangent showing the single solution per π-period — student should see that the symmetry rules for finding the second solution come directly from the geometry of the circle, not from a formula to memorize] -->
+![Three unit-circle diagrams side by side ](images/09-trigonometric-identities-and-equations-fig-04.png)
+*Figure 9.4 — Three unit-circle diagrams side by side *
 
 ### Quadratic form
 
@@ -280,7 +289,8 @@ The maximum displacement is $R \approx 0.206$ radians, or about $11.8°$. The fi
 
 A sum of two trig terms became one. The maximum, the phase, and the zeros all became readable from the single-function form. This is what the sum formulas are for in practice: not just computing $\cos 75°$, but combining oscillations into a manageable form.
 
-<!-- → [IMAGE: graph of θ(t) = 0.2·cos(2t) + 0.05·sin(2t) over t ∈ [0, 3] with the equivalent 0.206·cos(2t − 0.245) overlaid as a dashed curve (the two are identical — student should see they coincide), the maximum at t ≈ 0.123 labeled with R ≈ 0.206, and the first zero at t ≈ 0.908 labeled; a small right-triangle inset shows how R and φ are computed from the coefficients 0.2 and 0.05] -->
+![Graph of θ(t) = 0](images/09-trigonometric-identities-and-equations-fig-05.png)
+*Figure 9.5 — Graph of θ(t) = 0*
 
 ---
 
@@ -357,3 +367,53 @@ Who was Hipparchus, and how does his trigonometric work connect to the identitie
 - Ask it about Hipparchus's discovery of the precession of the equinoxes.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 9.1 — Unit circle with a point at angle θ
+
+Create a standalone D3 v7 HTML file for Figure Unit circle with a point at angle θ. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: unit circle with a point at angle θ labeled (cos θ, sin θ), a right triangle drawn from the origin to the point to the x-axis, and the Pythagorean identity written beside it — student should see that sin²θ + cos²θ = 1 is just x² + y² = 1 read in trig notation, not a separate fact to memorize. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/09-trigonometric-identities-and-equations-fig-01.html`
+
+---
+
+### Figure 9.2 — Derivation tree showing the sum formulas at the
+
+Create a standalone D3 v7 HTML file for Figure Derivation tree showing the sum formulas at the. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: derivation tree showing the sum formulas at the top, with arrows branching down — one branch: set A = B to get double-angle formulas; second branch: solve double-angle for θ/2 to get half-angle formulas; third branch: add sum and difference formulas to get product-to-sum formulas — student should see the entire chapter's identity catalog as a single derivation tree with two source formulas at the root. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/09-trigonometric-identities-and-equations-fig-02.html`
+
+---
+
+### Figure 9.3 — Graph showing sin(2π·440t) + sin(2π·660t) over a short
+
+Create a standalone D3 v7 HTML file for Figure Graph showing sin(2π·440t) + sin(2π·660t) over a short. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: graph showing sin(2π·440t) + sin(2π·660t) over a short time window — the rapid oscillation at the average frequency (550 Hz) is visibly modulated by a slower envelope at the difference frequency (220 Hz / 2 = 110 Hz); student should see the beating pattern and connect it to the sum-to-product formula that produces a product of a fast oscillation and a slow amplitude envelope. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/09-trigonometric-identities-and-equations-fig-03.html`
+
+---
+
+### Figure 9.4 — Three unit-circle diagrams side by side 
+
+Create a standalone D3 v7 HTML file for Figure Three unit-circle diagrams side by side . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: three unit-circle diagrams side by side — one for sine showing the two solutions θ and π − θ that share the same sine value; one for cosine showing the two solutions θ and −θ; one for tangent showing the single solution per π-period — student should see that the symmetry rules for finding the second solution come directly from the geometry of the circle, not from a formula to memorize. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/09-trigonometric-identities-and-equations-fig-04.html`
+
+---
+
+### Figure 9.5 — Graph of θ(t) = 0
+
+Create a standalone D3 v7 HTML file for Figure Graph of θ(t) = 0. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: graph of θ(t) = 0.2·cos(2t) + 0.05·sin(2t) over t ∈ [0, 3] with the equivalent 0.206·cos(2t − 0.245) overlaid as a dashed curve (the two are identical — student should see they coincide), the maximum at t ≈ 0.123 labeled with R ≈ 0.206, and the first zero at t ≈ 0.908 labeled; a small right-triangle inset shows how R and φ are computed from the coefficients 0.2 and 0.05. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/09-trigonometric-identities-and-equations-fig-05.html`

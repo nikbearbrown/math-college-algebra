@@ -29,7 +29,8 @@ Repeated multiplication instead of repeated addition. The two sequences — arit
 
 The distinction matters because the long-run behavior of each is completely different. An arithmetic sequence grows without bound if $d > 0$, shrinks without bound if $d < 0$, and stays constant if $d = 0$. The growth is *linear* — proportional to the number of steps taken. A geometric sequence with $r > 1$ grows *exponentially* — each step multiplies by $r$, so the terms accelerate. A geometric sequence with $0 < r < 1$ shrinks toward zero, each term a fixed fraction of the last. The bank account with $r = 1.05$ keeps growing, faster and faster in absolute terms, because each year's interest is computed on a larger base. The key word here is *compounding* — and compounding is geometric, not arithmetic.
 
-<!-- → [CHART: Two side-by-side line graphs over n = 1 to 20 — left shows arithmetic sequence a_n = 5 + 3(n−1) as a straight line; right shows geometric sequence a_n = 1000 · (1.05)^(n−1) as an accelerating curve; both use the same n-axis scale; student should see at a glance that arithmetic growth is linear and geometric growth accelerates, making the compound-interest claim visually immediate rather than just asserted] -->
+![Two side-by-side line graphs over n = 1](images/13-sequences-probability-and-counting-theory-fig-01.png)
+*Figure 13.1 — Two side-by-side line graphs over n = 1*
 
 ---
 
@@ -65,7 +66,8 @@ $$S_\infty = \frac{0.36}{1 - 0.01} = \frac{0.36}{0.99} = \frac{36}{99} = \frac{4
 
 The infinite decimal is exactly $\frac{4}{11}$. Not approximately — exactly. The repeating decimal is a geometric series in disguise, and the geometric series formula converts it to a fraction in three steps. This is how we proved, in Chapter 1, that all repeating decimals are rational numbers — not just asserted it, but showed the mechanism.
 
-<!-- → [IMAGE: Number line zoomed in between 0 and 1, showing the partial sums of the geometric series for 0.36̄ converging from the left — S₁ = 0.36, S₂ = 0.3636, S₃ = 0.363636, with arrows showing each partial sum landing closer to the target 4/11 ≈ 0.3636̄; the gap between each partial sum and the limit halved (approximately) each step; student should see convergence not just as an algebraic limit but as a sequence of points visibly closing in on a value] -->
+![Number line zoomed in between 0 and 1,](images/13-sequences-probability-and-counting-theory-fig-02.png)
+*Figure 13.2 — Number line zoomed in between 0 and 1,*
 
 ---
 
@@ -93,7 +95,8 @@ Row 4:  1   4   6   4   1
 
 Row $n$ gives the coefficients for $(a+b)^n$. Pascal's triangle is not just a pattern — each row entry counts something real: the number of ways to select $k$ items from $n$, which is exactly the coefficient that appears in the expansion.
 
-<!-- → [IMAGE: Pascal's triangle through Row 6 with each entry labeled both as C(n,k) and its numeric value; Row 4 highlighted to match the (x+2)⁴ expansion, with each entry annotated to show which term it produces — e.g., C(4,2)=6 labeled with "coefficient of x²·2²=24"; alongside, a small diagram showing the combinatorial interpretation: for C(4,2), four factor-slots with two marked "choose b" in all possible 6 arrangements; student should see that the triangle is a counting device, not just a pattern to memorize] -->
+![Pascal's triangle through Row 6 with each entry](images/13-sequences-probability-and-counting-theory-fig-03.png)
+*Figure 13.3 — Pascal's triangle through Row 6 with each entry*
 
 Here is the expansion of $(x + 2)^4$ in full:
 
@@ -126,7 +129,13 @@ The relationship between permutations and combinations is clean: $P(n,r) = C(n,r
 
 The practical skill is reading the problem and deciding: does order matter here? Finishing positions in a race: yes. Committee membership: no. Card hands: no. Assignment of prizes to ranked places: yes. The formula is always the same; the judgment about which formula applies requires understanding what you are actually counting.
 
-<!-- → [TABLE: Counting technique decision guide — columns: Situation, Order Matters?, Formula, Example; rows: (race finishing positions) ordered arrangement of r from n → P(n,r) = n!/(n−r)! → P(8,3)=336; (committee selection) unordered selection of r from n → C(n,r) = n!/r!(n−r)! → C(10,5)=252; (pizza order) independent sequential choices → multiplication principle → 4×6=24; (relationship between them) every C(n,r) selection × r! orderings = P(n,r); student should identify which row applies before picking up a formula] -->
+| Situation | Order Matters? | Formula | Example |
+| --- | --- | --- | --- |
+| race finishing positions) ordered arrangement of r from n → P(n,r) = n! | (n−r)! → P(8,3)=336 | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. |
+| committee selection) unordered selection of r from n → C(n,r) = n! | r!(n−r)! → C(10,5)=252 | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. |
+| pizza order) independent sequential choices → multiplication principle → 4×6=24 | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. |
+| relationship between them) every C(n,r) selection × r! orderings = P(n,r | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. |
+| student should identify which row applies before picking up a formula | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. |
 
 ---
 
@@ -176,7 +185,8 @@ With only 23 people, there is already a better-than-even chance that two of them
 
 Why is it so low? Because it is not about any specific birthday — it is about whether *any* pair matches among all $\binom{23}{2} = 253$ possible pairs. Each pair is unlikely to match, but 253 tries is a lot of tries. The multiplication of many small probabilities accumulates fast when the number of pairs grows as the square of the number of people. This is the same structural reason that networks become densely connected much faster than their size grows, that diseases spread faster than headcounts suggest, and that mutual acquaintances appear unexpectedly in large groups. Combinatorial growth is counterintuitive at the gut level; the calculation is the only reliable guide.
 
-<!-- → [CHART: Line graph of P(at least one shared birthday) on the y-axis (0 to 1) vs. number of people in the room on the x-axis (1 to 60); the curve rises steeply, crossing 0.5 at n=23 (marked with a vertical dashed line and label "50% threshold: 23 people"), reaching ~0.97 by n=50; a horizontal annotation at n=180 labeled "common intuition" shown dramatically to the right of where the curve has already reached ~1; student should see how fast the probability saturates and how far off the intuitive estimate of "half of 365" actually is] -->
+![Line graph of P(at least one shared birthday)](images/13-sequences-probability-and-counting-theory-fig-04.png)
+*Figure 13.4 — Line graph of P(at least one shared birthday)*
 
 ---
 
@@ -229,3 +239,45 @@ Who was Sofia Kovalevskaya, and how does her mathematical work connect to the se
 - Ask it about her parallel career as a novelist and the autobiographical novel *Nihilist Girl*.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 13.1 — Two side-by-side line graphs over n = 1
+
+Create a standalone D3 v7 HTML file for Figure Two side-by-side line graphs over n = 1. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Two side-by-side line graphs over n = 1 to 20 — left shows arithmetic sequence a_n = 5 + 3(n−1) as a straight line; right shows geometric sequence a_n = 1000 · (1.05)^(n−1) as an accelerating curve; both use the same n-axis scale; student should see at a glance that arithmetic growth is linear and geometric growth accelerates, making the compound-interest claim visually immediate rather than just asserted. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/13-sequences-probability-and-counting-theory-fig-01.html`
+
+---
+
+### Figure 13.2 — Number line zoomed in between 0 and 1,
+
+Create a standalone D3 v7 HTML file for Figure Number line zoomed in between 0 and 1,. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Number line zoomed in between 0 and 1, showing the partial sums of the geometric series for 0.36̄ converging from the left — S₁ = 0.36, S₂ = 0.3636, S₃ = 0.363636, with arrows showing each partial sum landing closer to the target 4/11 ≈ 0.3636̄; the gap between each partial sum and the limit halved (approximately) each step; student should see convergence not just as an algebraic limit but as a sequence of points visibly closing in on a value. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/13-sequences-probability-and-counting-theory-fig-02.html`
+
+---
+
+### Figure 13.3 — Pascal's triangle through Row 6 with each entry
+
+Create a standalone D3 v7 HTML file for Figure Pascal's triangle through Row 6 with each entry. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Pascal's triangle through Row 6 with each entry labeled both as C(n,k) and its numeric value; Row 4 highlighted to match the (x+2)⁴ expansion, with each entry annotated to show which term it produces — e.g., C(4,2)=6 labeled with "coefficient of x²·2²=24"; alongside, a small diagram showing the combinatorial interpretation: for C(4,2), four factor-slots with two marked "choose b" in all possible 6 arrangements; student should see that the triangle is a counting device, not just a pattern to memorize. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/13-sequences-probability-and-counting-theory-fig-03.html`
+
+---
+
+### Figure 13.4 — Line graph of P(at least one shared birthday)
+
+Create a standalone D3 v7 HTML file for Figure Line graph of P(at least one shared birthday). Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Line graph of P(at least one shared birthday) on the y-axis (0 to 1) vs. number of people in the room on the x-axis (1 to 60); the curve rises steeply, crossing 0.5 at n=23 (marked with a vertical dashed line and label "50% threshold: 23 people"), reaching ~0.97 by n=50; a horizontal annotation at n=180 labeled "common intuition" shown dramatically to the right of where the curve has already reached ~1; student should see how fast the probability saturates and how far off the intuitive estimate of "half of 365" actually is. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/13-sequences-probability-and-counting-theory-fig-04.html`

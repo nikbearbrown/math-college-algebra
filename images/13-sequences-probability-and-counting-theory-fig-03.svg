@@ -1,0 +1,25 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Pascal's triangle through Row 6 with each entry</title>
+  <desc id="desc">Pascal's triangle through Row 6 with each entry labeled both as C(n,k) and its numeric value; Row 4 highlighted to match the (x+2)⁴ expansion, with ea</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a1a0e"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="420" fill="#FFFFFF"/>
+  <text x="32" y="42" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="13" font-weight="bold" fill="#2a1a0e">Pascal's triangle through Row 6 with each entry</text>
+  <text x="32" y="62" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="10" fill="#545454">Pascal's triangle through Row 6 with each entry labeled both as C(n,k) and its numeric value; Row 4 highlighted to match the (x+2)⁴ expansion, with ea</text>
+  <rect x="64" y="116" width="160" height="180" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="144" y="148" text-anchor="middle" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">PASCAL'S</text>
+  <circle cx="144" cy="204" r="28" fill="#6B3520"/>
+  <text x="144" y="266" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">evidence view</text>
+  <rect x="258" y="116" width="160" height="180" fill="#F5EFE8" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="338" y="148" text-anchor="middle" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">TRIANGLE</text>
+  <circle cx="338" cy="204" r="36" fill="#C8102E"/>
+  <text x="338" y="266" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">evidence view</text>
+  <rect x="452" y="116" width="160" height="180" fill="#FFFFFF" stroke="#D4D4D4" stroke-width="1"/>
+  <text x="532" y="148" text-anchor="middle" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="10" letter-spacing="0.08em" fill="#545454">THROUGH</text>
+  <circle cx="532" cy="204" r="44" fill="#1A3A5C"/>
+  <text x="532" y="266" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">evidence view</text>
+  <text x="350" y="340" text-anchor="middle" font-family="'EB Garamond', Georgia, 'Times New Roman', serif" font-size="11" fill="#2a1a0e">Panels translate the chapter prompt into comparable visual states.</text>
+</svg>

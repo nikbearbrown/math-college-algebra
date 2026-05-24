@@ -24,7 +24,8 @@ Graph $y = \sin x$ from $0$ to $2\pi$. The curve starts at $(0, 0)$, rises to a 
 
 Cosine is sine shifted left by $\pi/2$. They're the same wave, out of phase.
 
-<!-- → [IMAGE: $y = \sin x$ and $y = \cos x$ plotted together on the same axes from $-\pi$ to $3\pi$, with key points labeled — $(0,0)$, $(\pi/2, 1)$, $(\pi, 0)$, $(3\pi/2, -1)$, $(2\pi, 0)$ for sine; $(0,1)$, $(\pi/2, 0)$, $(\pi, -1)$ for cosine; the $\pi/2$ horizontal offset between the two curves marked with a bracket; student should see "same shape, different starting point" before the parameter section introduces how to shift deliberately] -->
+![$y = \sin x$ and $y = \cos](images/08-periodic-functions-fig-01.png)
+*Figure 8.1 — $y = \sin x$ and $y = \cos*
 
 ### The four parameters
 
@@ -42,7 +43,8 @@ and the same form for cosine. Each parameter does something geometrically specif
 
 **Vertical shift $d$** moves the entire wave up or down. The midline of the oscillation — the horizontal center line — is at $y = d$, not at $y = 0$. The wave oscillates between $d - |a|$ and $d + |a|$.
 
-<!-- → [INFOGRAPHIC: four-panel diagram, each panel showing $y = \sin x$ (faint gray baseline) alongside one transformed version — top-left: amplitude doubled ($a = 2$, taller wave); top-right: period halved ($b = 2$, compressed wave); bottom-left: phase shifted right ($c = \pi/2$, same wave slid right); bottom-right: vertical shift up ($d = 2$, wave riding a raised midline); each panel labels only the changed parameter and its geometric effect; student should be able to match each parameter to its visual consequence before reading the worked example] -->
+![Four-panel diagram, each panel showing $y = \sin](images/08-periodic-functions-fig-02.png)
+*Figure 8.2 — Four-panel diagram, each panel showing $y = \sin*
 
 **Example.** Sketch $y = 3\sin\!\left(2x - \frac{\pi}{2}\right) + 1$.
 
@@ -50,7 +52,8 @@ Pull out the four parameters. Amplitude: $|a| = 3$. Period: $\frac{2\pi}{2} = \p
 
 The midline is $y = 1$. The wave oscillates between $1 - 3 = -2$ and $1 + 3 = 4$. One full cycle runs from $x = \pi/4$ to $x = \pi/4 + \pi = 5\pi/4$. The wave starts at its midline at $x = \pi/4$, reaches its maximum of $4$ at $x = \pi/4 + \pi/4 = \pi/2$, returns to its midline at $x = 3\pi/4$, reaches its minimum of $-2$ at $x = \pi$, and completes the cycle at $x = 5\pi/4$.
 
-<!-- → [IMAGE: sketch of $y = 3\sin(2x - \pi/2) + 1$ over two full cycles, with all five key points of the cycle explicitly labeled: midline crossing at $x = \pi/4$ (start), maximum at $(\pi/2, 4)$, midline crossing at $x = 3\pi/4$, minimum at $(\pi, -2)$, cycle end at $x = 5\pi/4$; dashed horizontal lines at $y = 1$ (midline), $y = 4$ (max), $y = -2$ (min); student should verify each analytical result above against the graph] -->
+![Sketch of $y = 3\sin(2x - \pi/2) +](images/08-periodic-functions-fig-03.png)
+*Figure 8.3 — Sketch of $y = 3\sin(2x - \pi/2) +*
 
 The four parameters are independent. Change any one and only that geometric feature changes. This is what makes the sinusoidal form powerful for modeling: each parameter corresponds to a measurable property of the phenomenon, and you can read the parameters directly from data.
 
@@ -76,7 +79,8 @@ where $t$ is the day of the year. On day 172: $L = 3\cos(0) + 12 = 15$. On day 3
 
 This is why sinusoidal functions are useful: not because someone declared that daylight varies sinusoidally, but because the actual data is well-approximated by a sinusoidal curve, and the parameters have physical meaning — amplitude is the range, period is the year, phase is the date of longest day.
 
-<!-- → [CHART: $L(t) = 3\cos(2\pi(t-172)/365) + 12$ plotted over one full year ($t = 0$ to $365$), with the actual Boston daylight data points overlaid as dots for the solstices and equinoxes; horizontal dashed lines at $L = 15$ (summer max), $L = 9$ (winter min), $L = 12$ (midline); vertical dashed lines at $t = 172$ (June 21) and $t = 355$ (Dec 21); student should see that the formula and the data aren't just numerically close — the curve's shape matches the physical phenomenon] -->
+![$L(t) = 3\cos(2\pi(t-172)/365) + 12$ plotted over one](images/08-periodic-functions-fig-04.png)
+*Figure 8.4 — $L(t) = 3\cos(2\pi(t-172)/365) + 12$ plotted over one*
 
 ---
 
@@ -94,7 +98,8 @@ The period of tangent is $\pi$, not $2\pi$. The tangent function completes a ful
 
 Why $\pi$ and not $2\pi$? Because $\tan(x + \pi) = \frac{\sin(x + \pi)}{\cos(x + \pi)} = \frac{-\sin x}{-\cos x} = \frac{\sin x}{\cos x} = \tan x$. The negatives cancel. Shifting by $\pi$ returns the same value.
 
-<!-- → [IMAGE: $y = \tan x$ plotted from $-3\pi/2$ to $3\pi/2$, showing three complete branches; vertical asymptotes at $x = \pm\pi/2, \pm 3\pi/2$ drawn as dashed lines; zero crossings at $x = 0, \pm\pi$ marked; one branch annotated with "increases from $-\infty$ to $+\infty$ on $(-\pi/2, \pi/2)$"; period $\pi$ marked with a horizontal bracket between two successive zero crossings; student should see why the period is $\pi$ rather than $2\pi$ before encountering cotangent] -->
+![$y = \tan x$ plotted from $-3\pi/2$ to](images/08-periodic-functions-fig-05.png)
+*Figure 8.5 — $y = \tan x$ plotted from $-3\pi/2$ to*
 
 The three other functions — cotangent, secant, cosecant — are defined analogously:
 
@@ -108,7 +113,8 @@ $$\cot x = \frac{\cos x}{\sin x}, \qquad \sec x = \frac{1}{\cos x}, \qquad \csc 
 
 The useful mental picture: the graphs of $\sec x$ and $\csc x$ are the graphs of $\cos x$ and $\sin x$ *inverted* — stretched to infinity near the zeros, compressed toward $\pm 1$ at the peaks.
 
-<!-- → [IMAGE: two-panel figure — left panel: $y = \cos x$ (light gray, full wave) and $y = \sec x$ (dark, U-shaped arcs) plotted together from $-\pi$ to $3\pi$; right panel: $y = \sin x$ and $y = \csc x$ plotted together the same way; in each panel, asymptotes shown as dashed verticals, the parent function's zeros align exactly with the asymptotes of the reciprocal, and the reciprocal's arcs touch the parent function at $y = \pm 1$; student should see the reciprocal relationship geometrically — where the parent is small, the reciprocal is large, and vice versa] -->
+![Figure ](images/08-periodic-functions-fig-06.png)
+*Figure 8.6 — Figure *
 
 ### Transformations of tangent
 
@@ -142,7 +148,8 @@ For tangent, the restriction is $(-\pi/2, \pi/2)$ — open because the asymptote
 
 $$\tan^{-1}(1) = \pi/4, \quad \tan^{-1}(0) = 0, \quad \tan^{-1}(-\sqrt{3}) = -\pi/3$$
 
-<!-- → [IMAGE: three panels side by side, one per inverse function — left: $y = \sin x$ with the restricted segment $[-\pi/2, \pi/2]$ highlighted and all other periods faded, below it the graph of $y = \sin^{-1} x$ on $[-1,1]$; center: same treatment for $\cos x$ on $[0, \pi]$ and $\cos^{-1} x$; right: same for $\tan x$ on $(-\pi/2, \pi/2)$ and $\tan^{-1} x$; in each panel, the restricted segment of the original and the inverse function are visually mirror images across $y = x$; student should see that the inverse is literally the original function reflected — the range of the inverse is exactly the restricted domain of the original] -->
+![Three panels side by side, one per inverse](images/08-periodic-functions-fig-07.png)
+*Figure 8.7 — Three panels side by side, one per inverse*
 
 ### The composition trap
 
@@ -204,7 +211,8 @@ $$4 \leq t \leq 8$$
 
 The water is at least 11 feet from 4 AM to 8 AM — a four-hour window. By the symmetry of the cosine, the same window holds in the next cycle: 4 PM to 8 PM.
 
-<!-- → [CHART: $h(t) = 6\cos(\pi(t-6)/6) + 8$ plotted over 24 hours ($t = 0$ to $24$), showing two complete tide cycles; horizontal dashed lines at $h = 14$ (high tide), $h = 2$ (low tide), $h = 8$ (midline), $h = 11$ (boat threshold); the two intervals $[4, 8]$ and $[16, 20]$ shaded in a distinct color to show when $h \geq 11$; vertical tick marks at $t = 6, 12, 18$ (high tide, low tide, high tide); student should verify the shaded windows correspond exactly to the algebraic solution above] -->
+![$h(t) = 6\cos(\pi(t-6)/6) + 8$ plotted over 24](images/08-periodic-functions-fig-08.png)
+*Figure 8.8 — $h(t) = 6\cos(\pi(t-6)/6) + 8$ plotted over 24*
 
 This problem uses all three parts of the chapter. Part 1 built the sinusoidal model from four parameters. Part 3 solved the resulting inequality using the inverse cosine. The answer is concrete and checkable: plug $t = 4$ and $t = 8$ back in and confirm $h = 11$ at both.
 
@@ -257,3 +265,77 @@ Who was Joseph Fourier, and how does Fourier analysis connect to the periodic fu
 - Ask it about Fourier's parallel role as governor of Egypt under Napoleon — and how that work shaped his physics.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 8.1 — $y = \sin x$ and $y = \cos
+
+Create a standalone D3 v7 HTML file for Figure $y = \sin x$ and $y = \cos. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: $y = \sin x$ and $y = \cos x$ plotted together on the same axes from $-\pi$ to $3\pi$, with key points labeled — $(0,0)$, $(\pi/2, 1)$, $(\pi, 0)$, $(3\pi/2, -1)$, $(2\pi, 0)$ for sine; $(0,1)$, $(\pi/2, 0)$, $(\pi, -1)$ for cosine; the $\pi/2$ horizontal offset between the two curves marked with a bracket; student should see "same shape, different starting point" before the parameter section introduces how to shift deliberately. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/08-periodic-functions-fig-01.html`
+
+---
+
+### Figure 8.2 — Four-panel diagram, each panel showing $y = \sin
+
+Create a standalone D3 v7 HTML file for Figure Four-panel diagram, each panel showing $y = \sin. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: four-panel diagram, each panel showing $y = \sin x$ (faint gray baseline) alongside one transformed version — top-left: amplitude doubled ($a = 2$, taller wave); top-right: period halved ($b = 2$, compressed wave); bottom-left: phase shifted right ($c = \pi/2$, same wave slid right); bottom-right: vertical shift up ($d = 2$, wave riding a raised midline); each panel labels only the changed parameter and its geometric effect; student should be able to match each parameter to its visual consequence before reading the worked example. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/08-periodic-functions-fig-02.html`
+
+---
+
+### Figure 8.3 — Sketch of $y = 3\sin(2x - \pi/2) +
+
+Create a standalone D3 v7 HTML file for Figure Sketch of $y = 3\sin(2x - \pi/2) +. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: sketch of $y = 3\sin(2x - \pi/2) + 1$ over two full cycles, with all five key points of the cycle explicitly labeled: midline crossing at $x = \pi/4$ (start), maximum at $(\pi/2, 4)$, midline crossing at $x = 3\pi/4$, minimum at $(\pi, -2)$, cycle end at $x = 5\pi/4$; dashed horizontal lines at $y = 1$ (midline), $y = 4$ (max), $y = -2$ (min); student should verify each analytical result above against the graph. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/08-periodic-functions-fig-03.html`
+
+---
+
+### Figure 8.4 — $L(t) = 3\cos(2\pi(t-172)/365) + 12$ plotted over one
+
+Create a standalone D3 v7 HTML file for Figure $L(t) = 3\cos(2\pi(t-172)/365) + 12$ plotted over one. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: $L(t) = 3\cos(2\pi(t-172)/365) + 12$ plotted over one full year ($t = 0$ to $365$), with the actual Boston daylight data points overlaid as dots for the solstices and equinoxes; horizontal dashed lines at $L = 15$ (summer max), $L = 9$ (winter min), $L = 12$ (midline); vertical dashed lines at $t = 172$ (June 21) and $t = 355$ (Dec 21); student should see that the formula and the data aren't just numerically close — the curve's shape matches the physical phenomenon. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/08-periodic-functions-fig-04.html`
+
+---
+
+### Figure 8.5 — $y = \tan x$ plotted from $-3\pi/2$ to
+
+Create a standalone D3 v7 HTML file for Figure $y = \tan x$ plotted from $-3\pi/2$ to. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: $y = \tan x$ plotted from $-3\pi/2$ to $3\pi/2$, showing three complete branches; vertical asymptotes at $x = \pm\pi/2, \pm 3\pi/2$ drawn as dashed lines; zero crossings at $x = 0, \pm\pi$ marked; one branch annotated with "increases from $-\infty$ to $+\infty$ on $(-\pi/2, \pi/2)$"; period $\pi$ marked with a horizontal bracket between two successive zero crossings; student should see why the period is $\pi$ rather than $2\pi$ before encountering cotangent. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/08-periodic-functions-fig-05.html`
+
+---
+
+### Figure 8.6 — Figure 
+
+Create a standalone D3 v7 HTML file for Figure Figure . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: two-panel figure — left panel: $y = \cos x$ (light gray, full wave) and $y = \sec x$ (dark, U-shaped arcs) plotted together from $-\pi$ to $3\pi$; right panel: $y = \sin x$ and $y = \csc x$ plotted together the same way; in each panel, asymptotes shown as dashed verticals, the parent function's zeros align exactly with the asymptotes of the reciprocal, and the reciprocal's arcs touch the parent function at $y = \pm 1$; student should see the reciprocal relationship geometrically — where the parent is small, the reciprocal is large, and vice versa. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/08-periodic-functions-fig-06.html`
+
+---
+
+### Figure 8.7 — Three panels side by side, one per inverse
+
+Create a standalone D3 v7 HTML file for Figure Three panels side by side, one per inverse. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: three panels side by side, one per inverse function — left: $y = \sin x$ with the restricted segment $[-\pi/2, \pi/2]$ highlighted and all other periods faded, below it the graph of $y = \sin^{-1} x$ on $[-1,1]$; center: same treatment for $\cos x$ on $[0, \pi]$ and $\cos^{-1} x$; right: same for $\tan x$ on $(-\pi/2, \pi/2)$ and $\tan^{-1} x$; in each panel, the restricted segment of the original and the inverse function are visually mirror images across $y = x$; student should see that the inverse is literally the original function reflected — the range of the inverse is exactly the restricted domain of the original. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md 
+
+> Reference implementation: `d3/08-periodic-functions-fig-07.html`
+
+---
+
+### Figure 8.8 — $h(t) = 6\cos(\pi(t-6)/6) + 8$ plotted over 24
+
+Create a standalone D3 v7 HTML file for Figure $h(t) = 6\cos(\pi(t-6)/6) + 8$ plotted over 24. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: $h(t) = 6\cos(\pi(t-6)/6) + 8$ plotted over 24 hours ($t = 0$ to $24$), showing two complete tide cycles; horizontal dashed lines at $h = 14$ (high tide), $h = 2$ (low tide), $h = 8$ (midline), $h = 11$ (boat threshold); the two intervals $[4, 8]$ and $[16, 20]$ shaded in a distinct color to show when $h \geq 11$; vertical tick marks at $t = 6, 12, 18$ (high tide, low tide, high tide); student should verify the shaded windows correspond exactly to the algebraic solution above. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/08-periodic-functions-fig-08.html`

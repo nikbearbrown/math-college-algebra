@@ -10,7 +10,8 @@ The reason is that all three shapes are sections of a cone. Take a double cone �
 
 This chapter is about the algebra of those shapes: how to write their equations, how to read their geometry from the equations, and why the same curve keeps appearing in optics, acoustics, and orbital mechanics.
 
-<!-- → [IMAGE: diagram of a double cone (two cones joined at the apex) with four planes shown cutting through it at different angles — one parallel to the base (circle), one tilted slightly (ellipse), one parallel to a side of the cone (parabola), one steeply tilted cutting both cones (hyperbola) — each intersection labeled; student should see that the four conic sections are not four unrelated shapes but four outcomes of one geometric operation] -->
+![Diagram of a double cone (two cones joined](images/12-analytic-geometry-fig-01.png)
+*Figure 12.1 — Diagram of a double cone (two cones joined*
 
 ---
 
@@ -28,7 +29,12 @@ A *parabola* replaces the second focus with a line — the *directrix*. The rule
 
 Four curves, four distance conditions. The algebra translates each condition into an equation in $x$ and $y$.
 
-<!-- → [TABLE: four-row summary — columns: conic, fixed elements, distance condition, equation form — rows: circle (one point, fixed distance, x² + y² = r²), ellipse (two foci, sum = 2a, x²/a² + y²/b² = 1), hyperbola (two foci, |difference| = 2a, x²/a² − y²/b² = 1), parabola (one focus + directrix, equal distances, y² = 4px) — student should see the entire chapter's logic in one row per conic before any algebra appears] -->
+| conic | fixed elements | distance condition | equation form — |
+| --- | --- | --- | --- |
+| circle (one point, fixed distance, x² + y² = r² | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
+| ellipse (two foci, sum = 2a, x² | a² + y² | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
+| hyperbola (two foci, /difference/ = 2a, x² | a² − y² | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
+| parabola (one focus + directrix, equal distances, y² = 4px) | student should see the entire chapter's logic in one row per conic before any algebra appears | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
 
 ---
 
@@ -72,7 +78,8 @@ $$\frac{x^2}{25} + \frac{y^2}{16} = 1$$
 
 That is it. The entire geometry of the ellipse — its width, its height, the locations of both foci — is packed into two numbers in the denominators.
 
-<!-- → [IMAGE: labeled ellipse diagram showing the equation x²/25 + y²/16 = 1 — major axis along x from (−5,0) to (5,0), minor axis from (0,−4) to (0,4), foci marked at (±3, 0), distances from a point on the ellipse to both foci drawn with the sum labeled 2a = 10; student should see that the two denominator values (25 and 16) encode the full geometry and that a² = b² + c² holds: 25 = 16 + 9] -->
+![Labeled ellipse diagram showing the equation x²/25 +](images/12-analytic-geometry-fig-02.png)
+*Figure 12.2 — Labeled ellipse diagram showing the equation x²/25 +*
 
 ---
 
@@ -106,7 +113,8 @@ Vertices: $(\pm 4, 0)$. Foci: $(\pm 5, 0)$. Asymptotes: $y = \pm \frac{3}{4} x$.
 
 Draw the rectangle from $(-4, -3)$ to $(4, 3)$. Extend its diagonals. The two branches pass through the vertices, curl outward, and approach the diagonal lines.
 
-<!-- → [IMAGE: graph of x²/16 − y²/9 = 1 with the auxiliary rectangle drawn (corners at ±4, ±3), asymptotes y = ±(3/4)x shown as dashed lines extending through the rectangle's diagonals, vertices at (±4, 0) and foci at (±5, 0) labeled; student should see that the rectangle and its diagonals are a scaffold for sketching the hyperbola without plotting individual points] -->
+![Graph of x²/16 − y²/9 = 1 with](images/12-analytic-geometry-fig-03.png)
+*Figure 12.3 — Graph of x²/16 − y²/9 = 1 with*
 
 ### Where hyperbolas appear
 
@@ -138,7 +146,8 @@ Run it in reverse: a light source at the focus sends rays outward in all directi
 
 The parabola is the unique curve with this property. No other shape converts parallel rays to a focus without aberration. The definition — equal distances to focus and directrix — turns out to be exactly the condition that guarantees perfect focusing.
 
-<!-- → [IMAGE: two side-by-side diagrams of a parabolic mirror — left: parallel incoming rays (from a distant source) all reflecting through the focus; right: a point source at the focus emitting rays in all directions, each reflecting parallel to the axis — student should see both directions of the focusing property and understand why headlights and telescopes are the same shape used in reverse] -->
+![Two side-by-side diagrams of a parabolic mirror ](images/12-analytic-geometry-fig-04.png)
+*Figure 12.4 — Two side-by-side diagrams of a parabolic mirror *
 
 ---
 
@@ -187,7 +196,8 @@ One formula, one parameter, three curves. The parabola is the boundary — it is
 
 This polar form is the natural language of orbital mechanics. Kepler's first law — planets orbit the Sun in ellipses, with the Sun at one focus — is the statement that a planet's polar coordinates satisfy the formula above with $e < 1$. Comets on hyperbolic trajectories, passing through the solar system only once, satisfy the same formula with $e > 1$. A body that arrives from infinity, swings around the Sun, and departs on a path exactly mirroring its arrival has $e = 1$ — a parabolic orbit. Same formula throughout, physics choosing the eccentricity.
 
-<!-- → [IMAGE: a sequence of four polar curves plotted using r = ed/(1 − e·cosθ) with the same d but increasing e values: e = 0.3 (fat ellipse), e = 0.7 (elongated ellipse), e = 1.0 (parabola), e = 1.5 (hyperbola) — all four plotted on the same axes with the shared focus at the origin labeled; student should see the continuous deformation from circle-like ellipse through parabola to hyperbola as a single family controlled by e] -->
+![A sequence of four polar curves plotted using](images/12-analytic-geometry-fig-05.png)
+*Figure 12.5 — A sequence of four polar curves plotted using*
 
 ---
 
@@ -213,7 +223,8 @@ Eccentricity: $e = 900/7471 \approx 0.12$. This is mildly elliptical — more st
 
 Two observable measurements — the two altitudes — determined the entire orbital geometry. The semi-major axis, the semi-minor axis, the location of Earth relative to the ellipse's center, the eccentricity: all of it follows from the two numbers 200 and 2,000.
 
-<!-- → [IMAGE: diagram of the satellite orbit ellipse with Earth (drawn as a small circle) positioned at one focus, offset 900 km from the geometric center; perigee labeled at 6,571 km from Earth's center on the near side, apogee labeled at 8,371 km on the far side; a–c and a+c annotated to show how the two altitude measurements are read off the geometry — student should see that Earth is not at the center of the orbit but displaced toward the near end, and understand how two distance measurements uniquely determine the ellipse] -->
+![Diagram of the satellite orbit ellipse with Earth](images/12-analytic-geometry-fig-06.png)
+*Figure 12.6 — Diagram of the satellite orbit ellipse with Earth*
 
 ---
 
@@ -290,3 +301,61 @@ Who was Pierre de Fermat, and how does his analytic geometry work connect to wha
 - Ask it about Fermat's day job as a magistrate, and how mathematics fit into a working lawyer's life.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 12.1 — Diagram of a double cone (two cones joined
+
+Create a standalone D3 v7 HTML file for Figure Diagram of a double cone (two cones joined. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: diagram of a double cone (two cones joined at the apex) with four planes shown cutting through it at different angles — one parallel to the base (circle), one tilted slightly (ellipse), one parallel to a side of the cone (parabola), one steeply tilted cutting both cones (hyperbola) — each intersection labeled; student should see that the four conic sections are not four unrelated shapes but four outcomes of one geometric operation. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/12-analytic-geometry-fig-01.html`
+
+---
+
+### Figure 12.2 — Labeled ellipse diagram showing the equation x²/25 +
+
+Create a standalone D3 v7 HTML file for Figure Labeled ellipse diagram showing the equation x²/25 +. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: labeled ellipse diagram showing the equation x²/25 + y²/16 = 1 — major axis along x from (−5,0) to (5,0), minor axis from (0,−4) to (0,4), foci marked at (±3, 0), distances from a point on the ellipse to both foci drawn with the sum labeled 2a = 10; student should see that the two denominator values (25 and 16) encode the full geometry and that a² = b² + c² holds: 25 = 16 + 9. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/12-analytic-geometry-fig-02.html`
+
+---
+
+### Figure 12.3 — Graph of x²/16 − y²/9 = 1 with
+
+Create a standalone D3 v7 HTML file for Figure Graph of x²/16 − y²/9 = 1 with. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: graph of x²/16 − y²/9 = 1 with the auxiliary rectangle drawn (corners at ±4, ±3), asymptotes y = ±(3/4)x shown as dashed lines extending through the rectangle's diagonals, vertices at (±4, 0) and foci at (±5, 0) labeled; student should see that the rectangle and its diagonals are a scaffold for sketching the hyperbola without plotting individual points. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/12-analytic-geometry-fig-03.html`
+
+---
+
+### Figure 12.4 — Two side-by-side diagrams of a parabolic mirror 
+
+Create a standalone D3 v7 HTML file for Figure Two side-by-side diagrams of a parabolic mirror . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: two side-by-side diagrams of a parabolic mirror — left: parallel incoming rays (from a distant source) all reflecting through the focus; right: a point source at the focus emitting rays in all directions, each reflecting parallel to the axis — student should see both directions of the focusing property and understand why headlights and telescopes are the same shape used in reverse. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/12-analytic-geometry-fig-04.html`
+
+---
+
+### Figure 12.5 — A sequence of four polar curves plotted using
+
+Create a standalone D3 v7 HTML file for Figure A sequence of four polar curves plotted using. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: a sequence of four polar curves plotted using r = ed/(1 − e·cosθ) with the same d but increasing e values: e = 0.3 (fat ellipse), e = 0.7 (elongated ellipse), e = 1.0 (parabola), e = 1.5 (hyperbola) — all four plotted on the same axes with the shared focus at the origin labeled; student should see the continuous deformation from circle-like ellipse through parabola to hyperbola as a single family controlled by e. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/12-analytic-geometry-fig-05.html`
+
+---
+
+### Figure 12.6 — Diagram of the satellite orbit ellipse with Earth
+
+Create a standalone D3 v7 HTML file for Figure Diagram of the satellite orbit ellipse with Earth. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: diagram of the satellite orbit ellipse with Earth (drawn as a small circle) positioned at one focus, offset 900 km from the geometric center; perigee labeled at 6,571 km from Earth's center on the near side, apogee labeled at 8,371 km on the far side; a–c and a+c annotated to show how the two altitude measurements are read off the geometry — student should see that Earth is not at the center of the orbit but displaced toward the near end, and understand how two distance measurements uniquely determine the ellipse. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/12-analytic-geometry-fig-06.html`

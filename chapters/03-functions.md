@@ -23,7 +23,8 @@ Now consider the reverse: given an odometer reading, what time does it correspon
 
 The distinction is exactly this: a function is a rule where each input produces one output. The *same* input always produces the *same* output. Two different inputs are allowed to produce the same output — that is fine. What is not allowed is one input producing two different outputs.
 
-<!-- → [IMAGE: side-by-side diagram contrasting a valid function (arrows from each input to exactly one output) with a non-function (one input with two arrows pointing to two different outputs) — student should immediately see why the odometer-in-reverse example fails] -->
+![Diagram contrasting a valid function (arrows from each](images/03-functions-fig-01.png)
+*Figure 3.1 — Diagram contrasting a valid function (arrows from each*
 
 ### The notation
 
@@ -53,7 +54,10 @@ If neither constraint applies — no fractions, no even roots — the domain is 
 
 The range is harder to pin down from a formula alone. It helps to know the basic shapes. Here are the toolkit functions, the building blocks from which most college-algebra functions are assembled:
 
-<!-- → [TABLE: toolkit functions with columns — name, rule, graph shape (described briefly), domain, range — the graph-shape column is what makes this table earn its place; a student who can picture each shape can derive the domain and range rather than memorizing them] -->
+| Item | Meaning |
+| --- | --- |
+| earn its place | A concrete checkpoint for applying the chapter concept. |
+| a student who can picture each shape can derive the domain and range rather than memorizing them | A concrete checkpoint for applying the chapter concept. |
 
 | Function | Rule | Domain | Range |
 |---|---|---|---|
@@ -66,7 +70,8 @@ The range is harder to pin down from a formula alone. It helps to know the basic
 
 These are worth memorizing, not as arbitrary facts, but because every function in the next several chapters is one of these, modified.
 
-<!-- → [IMAGE: a single figure showing all six toolkit function graphs on labeled axes, arranged in a 2×3 grid — student should see the family resemblance and be able to read domain and range directly from the shape of each curve] -->
+![A single figure showing all six toolkit function](images/03-functions-fig-02.png)
+*Figure 3.2 — A single figure showing all six toolkit function*
 
 ### Testing a graph
 
@@ -76,7 +81,8 @@ A vertical line at $x = a$ is asking: "What output does the input $a$ produce?" 
 
 The parabola $y = x^2$ passes this test. Draw a vertical line anywhere; it hits the parabola once. The circle $x^2 + y^2 = 25$ fails. A vertical line at $x = 3$ hits the circle at $y = 4$ and at $y = -4$.
 
-<!-- → [IMAGE: two side-by-side graphs — left: parabola y = x² with a vertical line touching it once (labeled "function"); right: circle x² + y² = 25 with a vertical line at x = 3 crossing it at y = 4 and y = −4 (labeled "not a function") — student should see the test in action on both cases] -->
+![Two side-by-side graphs ](images/03-functions-fig-03.png)
+*Figure 3.3 — Two side-by-side graphs *
 
 ---
 
@@ -100,7 +106,8 @@ An *absolute maximum* is the highest value the function achieves over its entire
 
 The distinction between local and absolute matters. A function might have several local maxima — several peaks — while only one of them is the highest point overall. Hiking: you can stand at the summit of a small hill (local maximum) while a taller mountain nearby is the absolute maximum of the terrain.
 
-<!-- → [IMAGE: graph of a function with two local maxima and one local minimum marked, with the higher local maximum also labeled as the absolute maximum — the student should see that "local" and "absolute" are different concepts on the same curve] -->
+![Graph of a function with two local maxima](images/03-functions-fig-04.png)
+*Figure 3.4 — Graph of a function with two local maxima*
 
 ### Average rate of change
 
@@ -128,7 +135,8 @@ Same magnitude, opposite sign. Symmetric around the peak, as the parabolic model
 
 One warning about averages: a positive average rate of change over an interval does not mean the function increased throughout the interval. The function might have risen sharply, then dipped, with an overall net increase. The average captures the net; it hides what happened in between. This is the cost of algebra. Calculus refines the picture.
 
-<!-- → [IMAGE: graph of N(t) = −(t−5)² + 75 on [0, 12] with two secant lines drawn — one from (0, 50) to (5, 75) with positive slope labeled "+5 thousand/hr", one from (5, 75) to (10, 50) with negative slope labeled "−5 thousand/hr" — student should see that the secant slope is average rate of change and that it changes sign at the peak] -->
+![Graph of N(t) = −(t−5)² + 75 on](images/03-functions-fig-05.png)
+*Figure 3.5 — Graph of N(t) = −(t−5)² + 75 on*
 
 ---
 
@@ -161,7 +169,8 @@ The domain of $(f \circ g)(x)$ has two constraints: $x$ must be in the domain of
 
 Decomposing a composition — working backwards from the combined function to its pieces — is an important skill. For $h(x) = \sqrt{2x + 1}$, notice the structure: something is being square-rooted. The inner function is $g(x) = 2x + 1$ (it goes in first); the outer function is $f(u) = \sqrt{u}$ (it acts on the result). So $h = f \circ g$. There is often more than one valid decomposition; what matters is finding one that reveals structure.
 
-<!-- → [INFOGRAPHIC: pipeline diagram showing composition — a value x enters a box labeled g, the output g(x) travels along an arrow into a box labeled f, the final output f(g(x)) exits — a second pipeline below shows the reverse order (f first, then g) producing a different result — student should see why order is not interchangeable] -->
+![Pipeline diagram showing composition ](images/03-functions-fig-06.png)
+*Figure 3.6 — Pipeline diagram showing composition *
 
 ### Transforming a graph
 
@@ -183,7 +192,8 @@ Here is why: $f(x - 3) = f(0)$ when $x = 3$. The output that $f$ used to produce
 
 These transformations compose. The graph of $g(x) = -2(x - 3)^2 + 5$ is the parabola $y = x^2$ after four operations: shift right by 3, stretch vertically by 2, reflect across the $x$-axis (the negative sign), shift up by 5. Understanding this does not require re-plotting; it requires reading the formula.
 
-<!-- → [IMAGE: sequence of four small graphs showing the parabola y = x² being transformed step by step into g(x) = −2(x−3)² + 5 — each panel labeled with the operation applied — student should be able to read any transformation sequence from a formula by recognizing this pattern] -->
+![Sequence of four small graphs showing the parabola](images/03-functions-fig-07.png)
+*Figure 3.7 — Sequence of four small graphs showing the parabola*
 
 ### Even and odd functions
 
@@ -221,7 +231,8 @@ The composition $f(f^{-1}(x)) = x$ is the defining property of an inverse. Apply
 
 One notation warning: $f^{-1}(x)$ does *not* mean $\frac{1}{f(x)}$. The superscript $-1$ means inverse function, not reciprocal. The reciprocal is written $[f(x)]^{-1}$ or $\frac{1}{f(x)}$ to distinguish it.
 
-<!-- → [IMAGE: two graphs on the same axes — f(x) = 2x + 3 and its inverse f⁻¹(x) = (x−3)/2 — with the line y = x drawn as a dashed reference — student should see that the two graphs are reflections of each other across y = x, which is the geometric meaning of "swap x and y"] -->
+![Two graphs on the same axes ](images/03-functions-fig-08.png)
+*Figure 3.8 — Two graphs on the same axes *
 
 ---
 
@@ -243,7 +254,8 @@ Average speed in the first three hours: $\frac{d(3) - d(0)}{3} = \frac{135}{3} =
 
 Three concepts, one function, completely different questions. That is what the function framework does: it takes a relationship and makes it available to analysis from multiple angles.
 
-<!-- → [IMAGE: graph of d(t) = 60t − 5t² on [0, 12] — downward parabola with vertex labeled (6, 180), two secant lines drawn from (0, 0) to (3, 135) and from (3, 135) to (6, 180) with slopes 45 and 15 labeled, and a second dashed curve showing d(t−1) shifted one unit right — student should see all three lenses (domain/range, average rate of change, transformation) operating on the same graph] -->
+![Graph of d(t) = 60t − 5t² on](images/03-functions-fig-09.png)
+*Figure 3.9 — Graph of d(t) = 60t − 5t² on*
 
 ---
 
@@ -303,3 +315,85 @@ Who was Leonhard Euler, and how does his work on functions connect to what we co
 - Ask it about Euler's prolific output despite becoming blind in his later years.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 3.1 — Diagram contrasting a valid function (arrows from each
+
+Create a standalone D3 v7 HTML file for Figure Diagram contrasting a valid function (arrows from each. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: side-by-side diagram contrasting a valid function (arrows from each input to exactly one output) with a non-function (one input with two arrows pointing to two different outputs) — student should immediately see why the odometer-in-reverse example fails. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-01.html`
+
+---
+
+### Figure 3.2 — A single figure showing all six toolkit function
+
+Create a standalone D3 v7 HTML file for Figure A single figure showing all six toolkit function. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: a single figure showing all six toolkit function graphs on labeled axes, arranged in a 2×3 grid — student should see the family resemblance and be able to read domain and range directly from the shape of each curve. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-02.html`
+
+---
+
+### Figure 3.3 — Two side-by-side graphs 
+
+Create a standalone D3 v7 HTML file for Figure Two side-by-side graphs . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: two side-by-side graphs — left: parabola y = x² with a vertical line touching it once (labeled "function"); right: circle x² + y² = 25 with a vertical line at x = 3 crossing it at y = 4 and y = −4 (labeled "not a function") — student should see the test in action on both cases. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-03.html`
+
+---
+
+### Figure 3.4 — Graph of a function with two local maxima
+
+Create a standalone D3 v7 HTML file for Figure Graph of a function with two local maxima. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: graph of a function with two local maxima and one local minimum marked, with the higher local maximum also labeled as the absolute maximum — the student should see that "local" and "absolute" are different concepts on the same curve. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-04.html`
+
+---
+
+### Figure 3.5 — Graph of N(t) = −(t−5)² + 75 on
+
+Create a standalone D3 v7 HTML file for Figure Graph of N(t) = −(t−5)² + 75 on. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: graph of N(t) = −(t−5)² + 75 on [0, 12] with two secant lines drawn — one from (0, 50) to (5, 75) with positive slope labeled "+5 thousand/hr", one from (5, 75) to (10, 50) with negative slope labeled "−5 thousand/hr" — student should see that the secant slope is average rate of change and that it changes sign at the peak. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-05.html`
+
+---
+
+### Figure 3.6 — Pipeline diagram showing composition 
+
+Create a standalone D3 v7 HTML file for Figure Pipeline diagram showing composition . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: pipeline diagram showing composition — a value x enters a box labeled g, the output g(x) travels along an arrow into a box labeled f, the final output f(g(x)) exits — a second pipeline below shows the reverse order (f first, then g) producing a different result — student should see why order is not interchangeable. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-06.html`
+
+---
+
+### Figure 3.7 — Sequence of four small graphs showing the parabola
+
+Create a standalone D3 v7 HTML file for Figure Sequence of four small graphs showing the parabola. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: sequence of four small graphs showing the parabola y = x² being transformed step by step into g(x) = −2(x−3)² + 5 — each panel labeled with the operation applied — student should be able to read any transformation sequence from a formula by recognizing this pattern. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-07.html`
+
+---
+
+### Figure 3.8 — Two graphs on the same axes 
+
+Create a standalone D3 v7 HTML file for Figure Two graphs on the same axes . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: two graphs on the same axes — f(x) = 2x + 3 and its inverse f⁻¹(x) = (x−3)/2 — with the line y = x drawn as a dashed reference — student should see that the two graphs are reflections of each other across y = x, which is the geometric meaning of "swap x and y". Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-08.html`
+
+---
+
+### Figure 3.9 — Graph of d(t) = 60t − 5t² on
+
+Create a standalone D3 v7 HTML file for Figure Graph of d(t) = 60t − 5t² on. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: graph of d(t) = 60t − 5t² on [0, 12] — downward parabola with vertex labeled (6, 180), two secant lines drawn from (0, 0) to (3, 135) and from (3, 135) to (6, 180) with slopes 45 and 15 labeled, and a second dashed curve showing d(t−1) shifted one unit right — student should see all three lenses (domain/range, average rate of change, transformation) operating on the same graph. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/03-functions-fig-09.html`

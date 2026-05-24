@@ -27,7 +27,8 @@ Given any two points $(x_1, y_1)$ and $(x_2, y_2)$ on a line, the slope is
 
 $$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{\Delta y}{\Delta x}$$
 
-<!-- → [IMAGE: Coordinate plane showing a single line with two labeled points (x₁,y₁) and (x₂,y₂); vertical segment labeled Δy (rise) and horizontal segment labeled Δx (run) forming a right triangle under the line; slope ratio written beside the triangle; a second pair of points shown on the same line with a different triangle demonstrating that the ratio is identical regardless of which points are chosen — student should see why "same ratio, any two points" is what makes the line straight] -->
+![Coordinate plane showing a single line with two](images/04-linear-functions-fig-01.png)
+*Figure 4.1 — Coordinate plane showing a single line with two*
 
 *Rise over run.* The vertical change divided by the horizontal change. This ratio is the same no matter which two points on the line you choose — that constancy is precisely what makes the line straight.
 
@@ -63,7 +64,10 @@ $$3x - y = 1$$
 
 One line. Three names. The algebra is just moving terms around.
 
-<!-- → [TABLE: Side-by-side comparison of the three linear equation forms — columns: Form Name, General Template, When to Reach For It, Example (the y=3x−1 line in each); rows: slope-intercept, point-slope, standard; student should be able to scan this and immediately know which form fits the information they have been given] -->
+| Form Name | General Template | When to Reach For It | Example (the y=3x−1 line in each) |
+| --- | --- | --- | --- |
+| slope-intercept, point-slope, standard | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. |
+| student should be able to scan this and immediately know which form fits the information they have been given | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. |
 
 ---
 
@@ -83,7 +87,8 @@ $$m_1 \cdot m_2 = -1$$
 
 The perpendicular condition comes from geometry. If you rotate a line of slope $m$ by exactly $90°$, the new slope is $-\frac{1}{m}$. So the line $y = 3x - 1$ is parallel to $y = 3x + 7$ (same slope, different intercept) and perpendicular to $y = -\frac{1}{3}x + 4$ (slopes multiply to $3 \cdot (-\frac{1}{3}) = -1$).
 
-<!-- → [IMAGE: Coordinate plane showing three lines: y=3x−1 (solid), y=3x+7 (dashed, parallel), and y=−(1/3)x+4 (dotted, perpendicular); small square symbol marking the right angle at the intersection of the solid and dotted lines; slope labels annotated on each line; student should see at a glance that parallel lines are visual translations of each other and perpendicular lines form a genuine right angle, not just a steep crossing] -->
+![Coordinate plane showing three lines: y=3x−1 (solid), y=3x+7](images/04-linear-functions-fig-02.png)
+*Figure 4.2 — Coordinate plane showing three lines: y=3x−1 (solid), y=3x+7*
 
 ---
 
@@ -126,7 +131,8 @@ $$T = 100 \text{ texts}$$
 
 At 100 texts, both plans cost $\$40$. Below 100, Plan B is cheaper. Above 100, Plan A is.
 
-<!-- → [CHART: Line graph with texts on the x-axis (0–300) and monthly cost in dollars on the y-axis; two lines plotted — Plan A (y=0.10T+30, shallower slope, higher intercept) and Plan B (y=0.20T+20, steeper slope, lower intercept); intersection point labeled (100, $40); regions shaded or annotated to show which plan is cheaper on each side; student should see that the question "at what number of texts do they cost the same?" is literally the x-coordinate of the intersection] -->
+![Line graph with texts on the x-axis (0–300)](images/04-linear-functions-fig-03.png)
+*Figure 4.3 — Line graph with texts on the x-axis (0–300)*
 
 Three different stories. One structure. The algebra was identical each time.
 
@@ -161,7 +167,8 @@ The slope between the extreme points is $\frac{210 - 110}{75 - 30} = \frac{100}{
 
 $$S = 2.22(T - 30) + 110 = 2.22T + 43.4$$
 
-<!-- → [CHART: Scatter plot of the four nail-sales data points (30,110), (45,145), (60,175), (75,210) with the best-fit line S=2.22T+43.4 drawn through them; the line extended slightly beyond the data range on both ends with dashed segments marking the extrapolation zones; vertical residual segments from each data point to the line showing the small deviations; student should see that "best fit" means the line passes close to all points but through none of them exactly, and that the dashed extensions signal where trust in the model should fade] -->
+![Scatter plot of the four nail-sales data points](images/04-linear-functions-fig-04.png)
+*Figure 4.4 — Scatter plot of the four nail-sales data points*
 
 Now interpret it. The slope $2.22$ means: each additional degree of average daily temperature corresponds to about $2.22$ more pounds of nails sold per month. Why would that be? Warmer weather → more construction activity → more nails. The model captures a real phenomenon.
 
@@ -235,3 +242,45 @@ Who was René Descartes, and how does his coordinate system connect to the linea
 - Ask it about Descartes's parallel role in early modern philosophy — the cogito and beyond.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 4.1 — Coordinate plane showing a single line with two
+
+Create a standalone D3 v7 HTML file for Figure Coordinate plane showing a single line with two. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Coordinate plane showing a single line with two labeled points (x₁,y₁) and (x₂,y₂); vertical segment labeled Δy (rise) and horizontal segment labeled Δx (run) forming a right triangle under the line; slope ratio written beside the triangle; a second pair of points shown on the same line with a different triangle demonstrating that the ratio is identical regardless of which points are chosen — student should see why "same ratio, any two points" is what makes the line straight. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/04-linear-functions-fig-01.html`
+
+---
+
+### Figure 4.2 — Coordinate plane showing three lines: y=3x−1 (solid), y=3x+7
+
+Create a standalone D3 v7 HTML file for Figure Coordinate plane showing three lines: y=3x−1 (solid), y=3x+7. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Coordinate plane showing three lines: y=3x−1 (solid), y=3x+7 (dashed, parallel), and y=−(1/3)x+4 (dotted, perpendicular); small square symbol marking the right angle at the intersection of the solid and dotted lines; slope labels annotated on each line; student should see at a glance that parallel lines are visual translations of each other and perpendicular lines form a genuine right angle, not just a steep crossing. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/04-linear-functions-fig-02.html`
+
+---
+
+### Figure 4.3 — Line graph with texts on the x-axis (0–300)
+
+Create a standalone D3 v7 HTML file for Figure Line graph with texts on the x-axis (0–300). Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Line graph with texts on the x-axis (0–300) and monthly cost in dollars on the y-axis; two lines plotted — Plan A (y=0.10T+30, shallower slope, higher intercept) and Plan B (y=0.20T+20, steeper slope, lower intercept); intersection point labeled (100, $40); regions shaded or annotated to show which plan is cheaper on each side; student should see that the question "at what number of texts do they cost the same?" is literally the x-coordinate of the intersection. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/04-linear-functions-fig-03.html`
+
+---
+
+### Figure 4.4 — Scatter plot of the four nail-sales data points
+
+Create a standalone D3 v7 HTML file for Figure Scatter plot of the four nail-sales data points. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Scatter plot of the four nail-sales data points (30,110), (45,145), (60,175), (75,210) with the best-fit line S=2.22T+43.4 drawn through them; the line extended slightly beyond the data range on both ends with dashed segments marking the extrapolation zones; vertical residual segments from each data point to the line showing the small deviations; student should see that "best fit" means the line passes close to all points but through none of them exactly, and that the dashed extensions signal where trust in the model should fade. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/04-linear-functions-fig-04.html`

@@ -30,7 +30,8 @@ The lines coincide — they are the same line. Infinitely many solutions. The sy
 
 Knowing which case you're in before you start solving saves a lot of computation. If the slopes of the two lines are equal but the intercepts differ, you already know there's no solution. If the equations are proportional, you already know there are infinitely many.
 
-<!-- → [IMAGE: three side-by-side coordinate plane sketches — left: two lines crossing at a single labeled point (consistent/independent, "one solution"); center: two parallel lines that never meet (inconsistent, "no solution"); right: two lines drawn as one, coincident (dependent, "infinitely many solutions"); each panel labeled with the case name and what happens algebraically during elimination — student should identify which case they're in before starting computation] -->
+![Three side-by-side coordinate plane sketches ](images/11-systems-of-equations-and-inequalities-fig-01.png)
+*Figure 11.1 — Three side-by-side coordinate plane sketches *
 
 ### Substitution
 
@@ -56,13 +57,15 @@ The $B$ terms vanished. Elimination works by engineering a cancellation — mult
 
 The two methods are algebraically equivalent. Which you use is a matter of convenience. Substitution is often faster for a $2 \times 2$ system; elimination scales better to larger systems, which is why it underlies the matrix methods in Part 3.
 
-<!-- → [IMAGE: coordinate plane showing both lines $L + B = 100$ (slope $-1$, intercepts at $(0,100)$ and $(100,0)$) and $4L + B = 220$ (slope $-4$, intercepts at $(0,220)$ and $(55,0)$) with the intersection point $(40, 60)$ marked and labeled; the two lines should be visually distinct colors; student should see that the algebraic solution corresponds to the geometric intersection before moving to three-variable systems where the geometry is harder to draw] -->
+![Coordinate plane showing both lines $L + B](images/11-systems-of-equations-and-inequalities-fig-02.png)
+*Figure 11.2 — Coordinate plane showing both lines $L + B*
 
 ### Three unknowns
 
 With three equations and three unknowns, the geometry changes: each equation is a plane in three-dimensional space. A solution is a point where all three planes meet.
 
-<!-- → [IMAGE: three-panel 3D diagram showing the three possible outcomes for three planes — left: three planes meeting at a single point (unique solution); center: three planes arranged so no common point exists — two parallel planes and one crossing them (no solution); right: three planes sharing a common line (infinitely many solutions along a line); each labeled with the outcome and what appears in elimination — "unique point," "contradiction $0=5$," "tautology $0=0$"; this is abstract geometry that most students have not visualized before] -->
+![3D diagram showing the three possible outcomes for](images/11-systems-of-equations-and-inequalities-fig-03.png)
+*Figure 11.3 — 3D diagram showing the three possible outcomes for*
 
 The technique extends naturally. Pick a pair of equations and eliminate one variable. Pick a different pair and eliminate the same variable. Now you have two equations in two unknowns — a system you already know how to solve. Back-substitute to get the third.
 
@@ -96,7 +99,8 @@ Two solutions: $x = 3$ (giving $y = 6$) and $x = -1$ (giving $y = -2$). The line
 
 Geometrically: a line can intersect a parabola in 0, 1, or 2 points. We found 2. A circle and a parabola can intersect in up to 4 points. The number of solutions is bounded by the degrees of the equations — a consequence of Bézout's theorem, which says that two curves of degrees $m$ and $n$ intersect in at most $mn$ points (counting complex and repeated intersections).
 
-<!-- → [IMAGE: coordinate plane showing the parabola $y = x^2 - 3$ and the line $y = 2x$, with the two intersection points $(3,6)$ and $(-1,-2)$ marked and labeled; small inset panels below show the same parabola with (a) a tangent line touching at exactly one point and (b) a horizontal line below the vertex touching zero points — all three intersection cases labeled "2 solutions," "1 solution," "0 solutions"; student should see the geometry behind "how many solutions does a nonlinear system have?"] -->
+![Coordinate plane showing the parabola $y = x^2](images/11-systems-of-equations-and-inequalities-fig-04.png)
+*Figure 11.4 — Coordinate plane showing the parabola $y = x^2*
 
 ### Systems of inequalities
 
@@ -118,7 +122,8 @@ If you wanted to maximize profit $P = 3x + 2y$ subject to these constraints, you
 
 The geometry made that optimization tractable. Without the feasible region, you'd have infinitely many candidates. With it, you have four.
 
-<!-- → [IMAGE: coordinate plane showing the feasible region for the four-inequality system — shaded quadrilateral with vertices $(0,0)$, $(6,0)$, $(4,4)$, $(0,8)$ marked and labeled; the two boundary lines $x+y=8$ and $2x+y=12$ drawn with distinct colors; the profit function $P=3x+2y$ shown as a dashed family of parallel lines increasing from lower-left to upper-right, with the line through $(4,4)$ highlighted as the maximum; student should see that the optimum always occurs at a vertex of the feasible region — the fundamental theorem of linear programming in one picture] -->
+![Coordinate plane showing the feasible region for the](images/11-systems-of-equations-and-inequalities-fig-05.png)
+*Figure 11.5 — Coordinate plane showing the feasible region for the*
 
 ---
 
@@ -164,7 +169,8 @@ This is *reduced row-echelon form* — identity matrix on the left, solution on 
 
 The matrix method is the same elimination we did before, but the notation strips away the variable names and focuses purely on the numbers. For large systems, this is what makes computation tractable (and eventually, programmable).
 
-<!-- → [INFOGRAPHIC: side-by-side comparison showing the same bread/bagel elimination done two ways — left column: traditional algebraic notation with variable names ($L$ and $B$), each step labeled; right column: the identical operations shown as row operations on the augmented matrix, each step labeled with the row operation notation (e.g., "R2 ← R2 − 4·R1"); arrows connect corresponding steps; student should see they are the same computation — the matrix is just a bookkeeping system that strips the variable names and keeps the numbers] -->
+![Comparison showing the same bread/bagel elimination done two](images/11-systems-of-equations-and-inequalities-fig-06.png)
+*Figure 11.6 — Comparison showing the same bread/bagel elimination done two*
 
 ### Matrix arithmetic
 
@@ -202,7 +208,8 @@ $$x_i = \frac{\det(A_i)}{\det(A)}$$
 
 where $A_i$ is the matrix $A$ with its $i$th column replaced by $\mathbf{b}$.
 
-<!-- → [INFOGRAPHIC: two-panel diagram illustrating Cramer's Rule for the $2\times 2$ bread/bagel system — left panel shows $A_L$: the coefficient matrix with its first column crossed out and replaced by the constants vector $\mathbf{b}$, with the resulting $2\times 2$ matrix written out; right panel shows $A_B$: same with the second column replaced; both panels label the determinant being computed and the resulting variable value; student should see the mechanical rule before working through the arithmetic] -->
+![Diagram illustrating Cramer's Rule for the $2\times 2$](images/11-systems-of-equations-and-inequalities-fig-07.png)
+*Figure 11.7 — Diagram illustrating Cramer's Rule for the $2\times 2$*
 
 **Example.** Solve the bread/bagel system using Cramer's Rule.
 
@@ -256,7 +263,12 @@ Back-substitute into row 1: $a + 68 + 32 = 100$, so $a = 0$.
 
 The solution is $a = 0$, $b = 34$, $c = 32$. The factory should produce 34 units of $B$ and 32 of $C$, and none of $A$. The fact that $a = 0$ isn't a failure of the method — it's a genuine finding. Given the resource constraints, product $A$ is squeezed out entirely. A real factory manager would want to know this.
 
-<!-- → [TABLE: the three augmented matrices shown sequentially — initial matrix, after eliminating the first column, after eliminating the second column — with each row operation annotated beside the arrow between stages; the final matrix and back-substitution steps shown below; the solution $a=0$, $b=34$, $c=32$ circled; student should be able to follow each row operation and verify the arithmetic before attempting their own $3\times 3$ reduction] -->
+| Item | Meaning |
+| --- | --- |
+| the three augmented matrices shown sequentially | initial matrix, after eliminating the first column, after eliminating the second column |
+| the final matrix and back-substitution steps shown below | A concrete checkpoint for applying the chapter concept. |
+| the solution $a=0$, $b=34$, $c=32$ circled | A concrete checkpoint for applying the chapter concept. |
+| student should be able to follow each row operation and verify the arithmetic before attempting their own $3\times 3$ reduction | A concrete checkpoint for applying the chapter concept. |
 
 The row reduction did what elimination always does: combined equations to cancel variables one at a time, until each unknown was isolated. The matrix notation made the bookkeeping manageable. The result is the same as if you'd done substitution with three equations — but faster to track and easier to debug when something goes wrong.
 
@@ -305,3 +317,69 @@ Who was Carl Friedrich Gauss, and how does Gaussian elimination connect to the s
 - Ask it about Gauss's habit of not publishing results — and what the field lost because of it.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 11.1 — Three side-by-side coordinate plane sketches 
+
+Create a standalone D3 v7 HTML file for Figure Three side-by-side coordinate plane sketches . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: three side-by-side coordinate plane sketches — left: two lines crossing at a single labeled point (consistent/independent, "one solution"); center: two parallel lines that never meet (inconsistent, "no solution"); right: two lines drawn as one, coincident (dependent, "infinitely many solutions"); each panel labeled with the case name and what happens algebraically during elimination — student should identify which case they're in before starting computation. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/11-systems-of-equations-and-inequalities-fig-01.html`
+
+---
+
+### Figure 11.2 — Coordinate plane showing both lines $L + B
+
+Create a standalone D3 v7 HTML file for Figure Coordinate plane showing both lines $L + B. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: coordinate plane showing both lines $L + B = 100$ (slope $-1$, intercepts at $(0,100)$ and $(100,0)$) and $4L + B = 220$ (slope $-4$, intercepts at $(0,220)$ and $(55,0)$) with the intersection point $(40, 60)$ marked and labeled; the two lines should be visually distinct colors; student should see that the algebraic solution corresponds to the geometric intersection before moving to three-variable systems where the geometry is harder to draw. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/11-systems-of-equations-and-inequalities-fig-02.html`
+
+---
+
+### Figure 11.3 — 3D diagram showing the three possible outcomes for
+
+Create a standalone D3 v7 HTML file for Figure 3D diagram showing the three possible outcomes for. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: three-panel 3D diagram showing the three possible outcomes for three planes — left: three planes meeting at a single point (unique solution); center: three planes arranged so no common point exists — two parallel planes and one crossing them (no solution); right: three planes sharing a common line (infinitely many solutions along a line); each labeled with the outcome and what appears in elimination — "unique point," "contradiction $0=5$," "tautology $0=0$"; this is abstract geometry that most students have not visualized before. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/11-systems-of-equations-and-inequalities-fig-03.html`
+
+---
+
+### Figure 11.4 — Coordinate plane showing the parabola $y = x^2
+
+Create a standalone D3 v7 HTML file for Figure Coordinate plane showing the parabola $y = x^2. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: coordinate plane showing the parabola $y = x^2 - 3$ and the line $y = 2x$, with the two intersection points $(3,6)$ and $(-1,-2)$ marked and labeled; small inset panels below show the same parabola with (a) a tangent line touching at exactly one point and (b) a horizontal line below the vertex touching zero points — all three intersection cases labeled "2 solutions," "1 solution," "0 solutions"; student should see the geometry behind "how many solutions does a nonlinear system have?". Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/11-systems-of-equations-and-inequalities-fig-04.html`
+
+---
+
+### Figure 11.5 — Coordinate plane showing the feasible region for the
+
+Create a standalone D3 v7 HTML file for Figure Coordinate plane showing the feasible region for the. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: coordinate plane showing the feasible region for the four-inequality system — shaded quadrilateral with vertices $(0,0)$, $(6,0)$, $(4,4)$, $(0,8)$ marked and labeled; the two boundary lines $x+y=8$ and $2x+y=12$ drawn with distinct colors; the profit function $P=3x+2y$ shown as a dashed family of parallel lines increasing from lower-left to upper-right, with the line through $(4,4)$ highlighted as the maximum; student should see that the optimum always occurs at a vertex of the feasible region — the fundamental theorem of linear programming in one picture. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font spli
+
+> Reference implementation: `d3/11-systems-of-equations-and-inequalities-fig-05.html`
+
+---
+
+### Figure 11.6 — Comparison showing the same bread/bagel elimination done two
+
+Create a standalone D3 v7 HTML file for Figure Comparison showing the same bread/bagel elimination done two. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: side-by-side comparison showing the same bread/bagel elimination done two ways — left column: traditional algebraic notation with variable names ($L$ and $B$), each step labeled; right column: the identical operations shown as row operations on the augmented matrix, each step labeled with the row operation notation (e.g., "R2 ← R2 − 4·R1"); arrows connect corresponding steps; student should see they are the same computation — the matrix is just a bookkeeping system that strips the variable names and keeps the numbers. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/11-systems-of-equations-and-inequalities-fig-06.html`
+
+---
+
+### Figure 11.7 — Diagram illustrating Cramer's Rule for the $2\times 2$
+
+Create a standalone D3 v7 HTML file for Figure Diagram illustrating Cramer's Rule for the $2\times 2$. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: two-panel diagram illustrating Cramer's Rule for the $2\times 2$ bread/bagel system — left panel shows $A_L$: the coefficient matrix with its first column crossed out and replaced by the constants vector $\mathbf{b}$, with the resulting $2\times 2$ matrix written out; right panel shows $A_B$: same with the second column replaced; both panels label the determinant being computed and the resulting variable value; student should see the mechanical rule before working through the arithmetic. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/11-systems-of-equations-and-inequalities-fig-07.html`

@@ -28,7 +28,8 @@ The critical feature: this function is not a line, not a polynomial, not anythin
 
 For growth, the picture reverses. Bacteria doubling every hour: $P(t) = 500 \cdot 2^t$. Start with 500. After 10 hours, 512,000. After 20 hours, 524 million. The function accelerates. A straight line grows by a fixed amount per step; an exponential grows by a fixed *factor* per step. Over long enough time, any exponential growth overtakes any polynomial growth. This is not an approximation — it is exact.
 
-<!-- → [IMAGE: two side-by-side graphs on the same axes — left: N(t) = 1000·(0.75)^t showing decay curving toward the horizontal asymptote y = 0; right: P(t) = 500·2^t showing growth accelerating away from the x-axis — student should see that both curves approach an asymptote, just on opposite ends, and neither is a line] -->
+![Two side-by-side graphs on the same axes ](images/06-exponential-and-logarithmic-functions-fig-01.png)
+*Figure 6.1 — Two side-by-side graphs on the same axes *
 
 ### The base that keeps appearing
 
@@ -40,7 +41,11 @@ $$e = \lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n \approx 2.71828$$
 
 The number $e$ is what continuous compounding converges to. But its significance goes deeper than finance. The function $f(x) = e^x$ has a property that no other exponential function has: its rate of change at every point equals its value there. The slope of the curve at any $x$ is exactly $e^x$. This is why calculus is dramatically cleaner with base $e$ — when you differentiate $e^x$, you get $e^x$ back. Any other base introduces a correction factor. We will not prove this here, but it is the reason $e$ is the natural base.
 
-<!-- → [TABLE: three-column table showing compounding frequency (annually, quarterly, monthly, daily, continuously), the formula applied, and the resulting value after 1 year starting from $1 at 100% — the final row shows e ≈ 2.71828; student should see the sequence converging and understand where the limit comes from] -->
+| Item | Meaning |
+| --- | --- |
+| showing compounding frequency (annually, quarterly, monthly, daily, continuously | A concrete checkpoint for applying the chapter concept. |
+| the formula applied, and the resulting value after 1 year starting from $1 at 100% | the final row shows e ≈ 2.71828 |
+| student should see the sequence converging and understand where the limit comes from | A concrete checkpoint for applying the chapter concept. |
 
 ### What compound interest is actually doing
 
@@ -84,7 +89,8 @@ The graph of $y = \log_b(x)$ for $b > 1$ is the graph of $y = b^x$ reflected acr
 
 How slowly? $\log_{10}(1{,}000{,}000) = 6$. $\log_{10}(1{,}000{,}000{,}000) = 9$. The output grows by 3 when the input multiplies by $1{,}000$. This is logarithmic growth — the opposite extreme from exponential. Exponential functions grow shockingly fast; logarithms grow shockingly slowly. Together, they bound the behavior of everything in between.
 
-<!-- → [IMAGE: graph of y = 2^x and y = log₂(x) on the same axes, with the line y = x drawn as a dashed reference — the two curves are mirror images across y = x, intersecting at (1,1) and (2,2); student should see the reflection relationship that defines inverse functions geometrically and notice the contrasting rates: one accelerates away, the other barely climbs] -->
+![Graph of y = 2^x and y =](images/06-exponential-and-logarithmic-functions-fig-02.png)
+*Figure 6.2 — Graph of y = 2^x and y =*
 
 ---
 
@@ -110,7 +116,9 @@ Calculators have buttons for $\ln$ and $\log_{10}$. They do not have a button fo
 
 One warning worth stating explicitly: $\log(a + b) \neq \log(a) + \log(b)$. The product rule says $\log(ab) = \log(a) + \log(b)$ — multiplication inside becomes addition outside. Addition inside has no simplification. Confusing these is the most common error in this chapter.
 
-<!-- → [TABLE: two-column table mapping each exponent rule to its logarithm counterpart — left column: b^m · b^n = b^(m+n), b^m / b^n = b^(m−n), (b^m)^p = b^(mp); right column: log(MN) = log M + log N, log(M/N) = log M − log N, log(M^p) = p·log M — student should see that the log rules are not new facts but the same facts read from the other direction] -->
+| b^m · b^n = b^(m+n) | b^m | b^n = b^(m−n) | (b^m)^p = b^(mp) |
+| --- | --- | --- | --- |
+| mapping each exponent rule to its logarithm counterpart | left | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
 
 ---
 
@@ -181,7 +189,8 @@ $$t = \frac{\ln 20}{0.275} \approx 10.9 \text{ hours}$$
 
 The same model also lets us look backward: when did the culture have only 100 bacteria? Set $100 = 500 e^{0.275t}$, get $t = \ln(0.2)/0.275 \approx -5.8$ hours. The negative sign says 5.8 hours before the measurement, which makes sense — the culture was smaller then.
 
-<!-- → [IMAGE: graph of P(t) = 500·e^(0.275t) from t = −6 to t = 12, with three points labeled: (−5.8, 100), (0, 500), (4, 1500), and (10.9, 10000) — student should see that the same curve answers backward-looking and forward-looking questions equally, and that finding k from one data point pins the entire curve] -->
+![Graph of P(t) = 500·e^(0](images/06-exponential-and-logarithmic-functions-fig-03.png)
+*Figure 6.3 — Graph of P(t) = 500·e^(0*
 
 ### Radioactive decay
 
@@ -210,7 +219,8 @@ Here $c$ is the *carrying capacity* — the ceiling the population approaches. I
 
 The logistic model describes real populations more accurately than pure exponential growth. A bacterial culture in a flask, a species colonizing an island, a technology spreading through a market — all follow logistic curves when the underlying resource is finite. The exponential is what you get when you look at the early part of the S-curve, before the ceiling becomes visible.
 
-<!-- → [IMAGE: S-shaped logistic curve P(t) = c/(1 + ae^(−bt)) with the carrying capacity c marked as a horizontal dashed asymptote at the top and the inflection point (where growth is fastest) marked — overlaid on the left portion, a dashed exponential curve showing how pure exponential growth matches the logistic curve early but diverges wildly as t grows; student should see that the exponential is an approximation that breaks when the ceiling comes into view] -->
+![S-shaped logistic curve P(t) = c/(1 + ae^(−bt))](images/06-exponential-and-logarithmic-functions-fig-04.png)
+*Figure 6.4 — S-shaped logistic curve P(t) = c/(1 + ae^(−bt))*
 
 ---
 
@@ -297,3 +307,45 @@ Who was John Napier, and how do logarithms connect to what we covered in this ch
 - Ask it about Napier's other inventions, including "Napier's bones" and a hydraulic screw for draining mines.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 6.1 — Two side-by-side graphs on the same axes 
+
+Create a standalone D3 v7 HTML file for Figure Two side-by-side graphs on the same axes . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: two side-by-side graphs on the same axes — left: N(t) = 1000·(0.75)^t showing decay curving toward the horizontal asymptote y = 0; right: P(t) = 500·2^t showing growth accelerating away from the x-axis — student should see that both curves approach an asymptote, just on opposite ends, and neither is a line. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/06-exponential-and-logarithmic-functions-fig-01.html`
+
+---
+
+### Figure 6.2 — Graph of y = 2^x and y =
+
+Create a standalone D3 v7 HTML file for Figure Graph of y = 2^x and y =. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: graph of y = 2^x and y = log₂(x) on the same axes, with the line y = x drawn as a dashed reference — the two curves are mirror images across y = x, intersecting at (1,1) and (2,2); student should see the reflection relationship that defines inverse functions geometrically and notice the contrasting rates: one accelerates away, the other barely climbs. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/06-exponential-and-logarithmic-functions-fig-02.html`
+
+---
+
+### Figure 6.3 — Graph of P(t) = 500·e^(0
+
+Create a standalone D3 v7 HTML file for Figure Graph of P(t) = 500·e^(0. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: graph of P(t) = 500·e^(0.275t) from t = −6 to t = 12, with three points labeled: (−5.8, 100), (0, 500), (4, 1500), and (10.9, 10000) — student should see that the same curve answers backward-looking and forward-looking questions equally, and that finding k from one data point pins the entire curve. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/06-exponential-and-logarithmic-functions-fig-03.html`
+
+---
+
+### Figure 6.4 — S-shaped logistic curve P(t) = c/(1 + ae^(−bt))
+
+Create a standalone D3 v7 HTML file for Figure S-shaped logistic curve P(t) = c/(1 + ae^(−bt)). Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: S-shaped logistic curve P(t) = c/(1 + ae^(−bt)) with the carrying capacity c marked as a horizontal dashed asymptote at the top and the inflection point (where growth is fastest) marked — overlaid on the left portion, a dashed exponential curve showing how pure exponential growth matches the logistic curve early but diverges wildly as t grows; student should see that the exponential is an approximation that breaks when the ceiling comes into view. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/06-exponential-and-logarithmic-functions-fig-04.html`

@@ -25,7 +25,8 @@ The real numbers, $\mathbb{R}$, are the rationals and irrationals together. Ever
 
 $$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 
-<!-- → [INFOGRAPHIC: Nested-rectangle diagram of the real number hierarchy — outermost rectangle labeled "Real numbers ℝ", split horizontally into "Rationals ℚ" and "Irrationals"; inside Rationals, nested rectangles for "Integers ℤ" → "Whole numbers 𝕎" → "Naturals ℕ"; sample values placed in each region: √2 and π in Irrationals, 2/3 and 0.36̄ in Rationals-outside-Integers, −7 in Integers-outside-Whole, 0 in Whole-outside-Naturals, 5 in Naturals; student should see at a glance that every natural is a real but not every real is a natural] -->
+![Nested-rectangle diagram of the real number hierarchy ](images/01-prerequisites-fig-01.png)
+*Figure 1.1 — Nested-rectangle diagram of the real number hierarchy *
 
 where $\mathbb{N}$ is the natural numbers, $\mathbb{W}$ adds zero (the *whole* numbers), $\mathbb{Z}$ adds negatives (the *integers* — from the German *Zahlen*, meaning *numbers*), $\mathbb{Q}$ adds ratios, and $\mathbb{R}$ adds the irrationals.
 
@@ -65,7 +66,9 @@ There is also the question of *order* when several operations appear together. T
 
 $$24 + 6 \cdot \frac{2}{3} - 4^2 = 24 + 6 \cdot \frac{2}{3} - 16 = 24 + 4 - 16 = 12$$
 
-<!-- → [TABLE: Step-by-step PEMDAS trace for 24 + 6 · (2/3) − 4² — columns: Step, Operation Applied, Expression After; rows walk through exponent → multiplication → addition/subtraction left-to-right, showing the expression state at each stage; student should see exactly where each rule fires and why left-to-right matters for the final two steps] -->
+| Step | Operation Applied | Expression After |
+| --- | --- | --- |
+| Step-by-step PEMDAS trace for 24 + 6 · (2 | 3) − 4² — | A concrete checkpoint for applying the chapter concept. |
 
 Exponent first, then multiplication, then left-to-right arithmetic. If you got a different answer, go back through and count which rule you applied in which order.
 
@@ -101,7 +104,10 @@ Two more rules, derived from the definition:
 
 $$(ab)^n = a^n b^n \qquad \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$$
 
-<!-- → [TABLE: Summary of all seven exponent rules — columns: Rule Name, Formula, Plain-English Meaning, Common Mistake to Avoid; rows: product, quotient, power, zero exponent, negative exponent, product-to-a-power, quotient-to-a-power; student should use this as a single-glance reference before attempting any simplification] -->
+| Rule Name | Formula | Plain-English Meaning | Common Mistake to Avoid |
+| --- | --- | --- | --- |
+| product, quotient, power, zero exponent, negative exponent, product-to-a-power, quotient-to-a-power | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
+| student should use this as a single-glance reference before attempting any simplification | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
 
 ### Scientific Notation
 
@@ -119,7 +125,8 @@ $$t = \frac{1.496 \times 10^{11}}{2.998 \times 10^8} = \frac{1.496}{2.998} \time
 
 About 499 seconds. About 8 minutes and 19 seconds. The exponent rules did the order-of-magnitude work; we only had to think about $\frac{1.496}{2.998}$.
 
-<!-- → [CHART: Number line or scale diagram showing representative measurements in scientific notation — from electron mass (10⁻³¹ kg) to Earth-Sun distance (10¹¹ m) to observable universe diameter (10²⁶ m); marks labeled with their scientific notation form alongside a plain description; student should see why compact notation is not optional at these scales] -->
+![Number line or scale diagram showing representative measurements](images/01-prerequisites-fig-02.png)
+*Figure 1.2 — Number line or scale diagram showing representative measurements*
 
 ### Radicals Are Exponents
 
@@ -201,7 +208,9 @@ $$a^3 - b^3 = (a - b)(a^2 + ab + b^2)$$
 
 So $x^3 - 8 = (x - 2)(x^2 + 2x + 4)$. These two identities are worth memorizing — they appear in calculus more often than you'd expect.
 
-<!-- → [TABLE: Factoring technique decision tree — columns: Pattern to Recognize, Technique, Example In, Example Out; rows cover GCF, trinomial a=1, trinomial a≠1 (grouping), difference of squares, perfect square trinomial, sum of cubes, difference of cubes; student should be able to scan this table, identify which row matches the polynomial in front of them, and apply the corresponding technique without guessing] -->
+| Pattern to Recognize | Technique | Example In | Example Out |
+| --- | --- | --- | --- |
+| , identify which row matches the polynomial in front of them, and apply the corresponding technique without guessing | A concrete checkpoint for applying the chapter concept. | Use the chapter example as the concrete test case. | Use the chapter example as the concrete test case. |
 
 ### Rational Expressions: Fractions Built from Polynomials
 
@@ -237,7 +246,8 @@ $$\frac{x^2 + 5x + 6}{x^2 - 9} = \frac{(x + 2)(x + 3)}{(x + 3)(x - 3)} = \frac{x
 
 The simplified form is equivalent to the original on its domain. Both restrictions come from the original denominator: $x^2 - 9 = 0$ when $x = 3$ or $x = -3$.
 
-<!-- → [IMAGE: Side-by-side graph of y = (x²+5x+6)/(x²−9) and y = (x+2)/(x−3) — left panel shows the rational expression with visible holes at x = −3 and a vertical asymptote at x = 3; right panel shows the simplified linear-ish curve with only the asymptote at x = 3; both panels use the same axes and scale; student should see that simplification removes the hole at x = −3 visually, which is why the restriction must be carried in writing even when it disappears from the algebra] -->
+![Graph of y = (x²+5x+6)/(x²−9) and y =](images/01-prerequisites-fig-03.png)
+*Figure 1.3 — Graph of y = (x²+5x+6)/(x²−9) and y =*
 
 ---
 
@@ -289,3 +299,37 @@ Who was Brahmagupta, and how does his work with zero and negative numbers connec
 - Ask it about how Brahmagupta's ideas reached medieval Europe through Arabic translations.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 1.1 — Nested-rectangle diagram of the real number hierarchy 
+
+Create a standalone D3 v7 HTML file for Figure Nested-rectangle diagram of the real number hierarchy . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Nested-rectangle diagram of the real number hierarchy — outermost rectangle labeled "Real numbers ℝ", split horizontally into "Rationals ℚ" and "Irrationals"; inside Rationals, nested rectangles for "Integers ℤ" → "Whole numbers 𝕎" → "Naturals ℕ"; sample values placed in each region: √2 and π in Irrationals, 2/3 and 0.36̄ in Rationals-outside-Integers, −7 in Integers-outside-Whole, 0 in Whole-outside-Naturals, 5 in Naturals; student should see at a glance that every natural is a real but not every real is a natural. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/01-prerequisites-fig-01.html`
+
+---
+
+### Figure 1.2 — Number line or scale diagram showing representative measurements
+
+Create a standalone D3 v7 HTML file for Figure Number line or scale diagram showing representative measurements. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Number line or scale diagram showing representative measurements in scientific notation — from electron mass (10⁻³¹ kg) to Earth-Sun distance (10¹¹ m) to observable universe diameter (10²⁶ m); marks labeled with their scientific notation form alongside a plain description; student should see why compact notation is not optional at these scales. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/01-prerequisites-fig-02.html`
+
+---
+
+### Figure 1.3 — Graph of y = (x²+5x+6)/(x²−9) and y =
+
+Create a standalone D3 v7 HTML file for Figure Graph of y = (x²+5x+6)/(x²−9) and y =. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Side-by-side graph of y = (x²+5x+6)/(x²−9) and y = (x+2)/(x−3) — left panel shows the rational expression with visible holes at x = −3 and a vertical asymptote at x = 3; right panel shows the simplified linear-ish curve with only the asymptote at x = 3; both panels use the same axes and scale; student should see that simplification removes the hole at x = −3 visually, which is why the restriction must be carried in writing even when it disappears from the algebra. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/01-prerequisites-fig-03.html`

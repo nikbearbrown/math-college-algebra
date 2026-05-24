@@ -21,7 +21,8 @@ $$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$
 
 Why should this be true? Drop a perpendicular from $C$ to side $c$, creating a height $h$. In the left sub-triangle, $h = b\sin A$. In the right sub-triangle, $h = a\sin B$. Setting these equal: $b\sin A = a\sin B$, which rearranges to $\frac{a}{\sin A} = \frac{b}{\sin B}$. The same construction with a perpendicular from $A$ gives the third ratio. The law follows from the definition of sine, applied twice inside the same triangle.
 
-<!-- → [IMAGE: Oblique triangle ABC with a perpendicular h dropped from vertex C to side c; left sub-triangle labeled with h = b sin A, right sub-triangle labeled with h = a sin B; the equality b sin A = a sin B written below the diagram with the rearrangement to (a/sin A) = (b/sin B) shown in one step; student should see that the Law of Sines is not a memorized formula but a consequence of dropping a perpendicular and reading off two expressions for the same height] -->
+![Oblique triangle ABC with a perpendicular h dropped](images/10-further-applications-of-trigonometry-fig-01.png)
+*Figure 10.1 — Oblique triangle ABC with a perpendicular h dropped*
 
 The Law of Sines is the tool to reach for when you know two angles and one side — because two angles immediately give you the third ($A + B + C = 180°$), and then you have a complete ratio to work with. It also applies when you know two sides and a non-included angle, though that case — called the *ambiguous case* — can produce zero, one, or two valid triangles. The ambiguity arises because $\sin\theta = \sin(180° - \theta)$: two different angles have the same sine, so the calculation may have two legitimate solutions.
 
@@ -56,7 +57,13 @@ Together, the Law of Sines and the Law of Cosines cover every triangle that can 
 - Three sides → Law of Cosines (for an angle), then Law of Sines for the rest.
 - Two sides and a non-included angle → Law of Sines, with ambiguity.
 
-<!-- → [TABLE: Triangle-solving decision guide — columns: What You Know, What You Want, Which Law, Caveat; rows: (AAS/ASA) two angles + one side → Law of Sines → none; (SAS) two sides + included angle → Law of Cosines → none; (SSS) three sides → Law of Cosines for first angle then Law of Sines → none; (SSA) two sides + non-included angle → Law of Sines → ambiguous case (0, 1, or 2 solutions); student should be able to look at what they are given and immediately identify the correct tool without trial and error] -->
+| What You Know | What You Want | Which Law | Caveat |
+| --- | --- | --- | --- |
+| AAS | ASA) two angles + one side → Law of Sines → none | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
+| SAS) two sides + included angle → Law of Cosines → none | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
+| SSS) three sides → Law of Cosines for first angle then Law of Sines → none | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
+| SSA) two sides + non-included angle → Law of Sines → ambiguous case (0, 1, or 2 solutions | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
+| student should be able to look at what they are given and immediately identify the correct tool without trial and error | The pattern becomes easy to misuse or overlook. | A concrete checkpoint for applying the chapter concept. | A concrete checkpoint for applying the chapter concept. |
 
 When all three sides are known but no angles, there is also Heron's formula for area directly:
 
@@ -83,7 +90,8 @@ Why does polar form matter? Because some curves that are complicated in rectangu
 
 The choice of coordinate system is a design decision. Use the system that makes your curve or your calculation simple.
 
-<!-- → [IMAGE: Four polar curves plotted side by side — (1) circle r = 3, (2) cardioid r = 2(1 + cos θ), (3) three-petal rose r = 2 cos(3θ), (4) Archimedean spiral r = 0.5θ; each labeled with its polar equation; student should see at a glance that these shapes — simple to state in polar — would require unwieldy rectangular equations, making the design-decision point about coordinate choice visually immediate] -->
+![Four polar curves plotted side by side ](images/10-further-applications-of-trigonometry-fig-02.png)
+*Figure 10.2 — Four polar curves plotted side by side *
 
 ---
 
@@ -117,7 +125,8 @@ Verify directly: $(1+i)^2 = 1 + 2i + i^2 = 2i$. Then $(2i)^2 = 4i^2 = -4$. The t
 
 The power of polar form is that it makes repeated multiplication geometrical. Raising to the $n$th power is spinning around the origin $n$ times while scaling the distance from the origin. Nothing mysterious.
 
-<!-- → [IMAGE: Complex plane showing the successive powers of (1+i) as points: (1+i)¹ at (1,1), (1+i)² = 2i at (0,2), (1+i)³ = -2+2i at (-2,2), (1+i)⁴ = -4 at (-4,0); each step connected by an arc showing a 45° rotation and a √2 scaling; the modulus at each step annotated: √2, 2, 2√2, 4; student should see De Moivre's theorem not as a formula to apply but as a rotation-and-scaling spiral in the complex plane] -->
+![Complex plane showing the successive powers of (1+i)](images/10-further-applications-of-trigonometry-fig-03.png)
+*Figure 10.3 — Complex plane showing the successive powers of (1+i)*
 
 ---
 
@@ -181,7 +190,8 @@ Direction: $\theta = \tan^{-1}(433/300) \approx 55.3°$ — slightly farther eas
 
 The wind adds $50$ mph of eastward push. The plane ends up moving faster than its airspeed but in a slightly shifted direction. Both the speed and direction of the ground track are different from what the pilot set — a practical reality that every navigator accounts for.
 
-<!-- → [IMAGE: Vector diagram showing the plane-wind problem — origin at lower left; plane vector p drawn at 60° with length 500 (labeled ⟨250, 433⟩); wind vector w drawn horizontally from the tip of p with length 50 (labeled ⟨50, 0⟩); resultant vector r drawn from origin to final tip (labeled ⟨300, 433⟩, magnitude ≈ 526 mph); angle 55.3° marked between r and the horizontal; the original 60° heading shown as a dashed reference line; student should see the tip-to-tail rule as a geometric construction, not just component arithmetic, and why the resultant direction differs from the heading] -->
+![Vector diagram showing the plane-wind problem ](images/10-further-applications-of-trigonometry-fig-04.png)
+*Figure 10.4 — Vector diagram showing the plane-wind problem *
 
 ---
 
@@ -205,7 +215,8 @@ The fire is about 6 miles from station A and about 9.9 miles from station B.
 
 This problem used nothing that the surveyors of Everest did not also use. The geometry is the same: known baseline, observed angles, unknown distances, one application of the Law of Sines. The only difference is scale.
 
-<!-- → [IMAGE: Diagram of the fire lookout problem — horizontal baseline AB labeled 12 miles with A on the left and B on the right; fire F above and between them; angle at A labeled 55°, angle at B labeled 30°, angle at F labeled 95°; distances AF ≈ 6.02 mi and BF ≈ 9.87 mi labeled along the respective sides; the N 35° E and N 60° W bearing arrows shown at A and B with north-direction reference lines; student should see how the bearing-to-angle translation maps onto the triangle and verify the angle sum at a glance] -->
+![Diagram of the fire lookout problem ](images/10-further-applications-of-trigonometry-fig-05.png)
+*Figure 10.5 — Diagram of the fire lookout problem *
 
 ---
 
@@ -252,3 +263,53 @@ Who was Bhāskara II, and how does his work connect to the further applications 
 - Ask it about the legend of the *Līlāvatī* being written for Bhāskara's daughter — and whether it's likely true.
 
 What changes? What gets better? What gets worse?
+
+## Prompts
+
+Use these prompts with Claude to generate interactive D3 v7 versions of the
+figures in this chapter. Each produces a standalone HTML file you can open
+in a browser and modify freely.
+
+**Prerequisites:** Load `brutalist/CLAUDE.md` and `brutalist/DESIGN.md` into
+your Claude project context before using these prompts. They define the stack,
+naming conventions, color system, and typography the figures use.
+
+---
+
+### Figure 10.1 — Oblique triangle ABC with a perpendicular h dropped
+
+Create a standalone D3 v7 HTML file for Figure Oblique triangle ABC with a perpendicular h dropped. Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Oblique triangle ABC with a perpendicular h dropped from vertex C to side c; left sub-triangle labeled with h = b sin A, right sub-triangle labeled with h = a sin B; the equality b sin A = a sin B written below the diagram with the rearrangement to (a/sin A) = (b/sin B) shown in one step; student should see that the Law of Sines is not a memorized formula but a consequence of dropping a perpendicular and reading off two expressions for the same height. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/10-further-applications-of-trigonometry-fig-01.html`
+
+---
+
+### Figure 10.2 — Four polar curves plotted side by side 
+
+Create a standalone D3 v7 HTML file for Figure Four polar curves plotted side by side . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Four polar curves plotted side by side — (1) circle r = 3, (2) cardioid r = 2(1 + cos θ), (3) three-petal rose r = 2 cos(3θ), (4) Archimedean spiral r = 0.5θ; each labeled with its polar equation; student should see at a glance that these shapes — simple to state in polar — would require unwieldy rectangular equations, making the design-decision point about coordinate choice visually immediate. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/10-further-applications-of-trigonometry-fig-02.html`
+
+---
+
+### Figure 10.3 — Complex plane showing the successive powers of (1+i)
+
+Create a standalone D3 v7 HTML file for Figure Complex plane showing the successive powers of (1+i). Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Complex plane showing the successive powers of (1+i) as points: (1+i)¹ at (1,1), (1+i)² = 2i at (0,2), (1+i)³ = -2+2i at (-2,2), (1+i)⁴ = -4 at (-4,0); each step connected by an arc showing a 45° rotation and a √2 scaling; the modulus at each step annotated: √2, 2, 2√2, 4; student should see De Moivre's theorem not as a formula to apply but as a rotation-and-scaling spiral in the complex plane. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/10-further-applications-of-trigonometry-fig-03.html`
+
+---
+
+### Figure 10.4 — Vector diagram showing the plane-wind problem 
+
+Create a standalone D3 v7 HTML file for Figure Vector diagram showing the plane-wind problem . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Vector diagram showing the plane-wind problem — origin at lower left; plane vector p drawn at 60° with length 500 (labeled ⟨250, 433⟩); wind vector w drawn horizontally from the tip of p with length 50 (labeled ⟨50, 0⟩); resultant vector r drawn from origin to final tip (labeled ⟨300, 433⟩, magnitude ≈ 526 mph); angle 55.3° marked between r and the horizontal; the original 60° heading shown as a dashed reference line; student should see the tip-to-tail rule as a geometric construction, not just component arithmetic, and why the resultant direction differs from the heading. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono
+
+> Reference implementation: `d3/10-further-applications-of-trigonometry-fig-04.html`
+
+---
+
+### Figure 10.5 — Diagram of the fire lookout problem 
+
+Create a standalone D3 v7 HTML file for Figure Diagram of the fire lookout problem . Use the CDN https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js, inline CSS, ResizeObserver redraw, SVG role="img", aria-labelledby, title, and desc. Build the figure from this structural brief: Diagram of the fire lookout problem — horizontal baseline AB labeled 12 miles with A on the left and B on the right; fire F above and between them; angle at A labeled 55°, angle at B labeled 30°, angle at F labeled 95°; distances AF ≈ 6.02 mi and BF ≈ 9.87 mi labeled along the respective sides; the N 35° E and N 60° W bearing arrows shown at A and B with north-direction reference lines; student should see how the bearing-to-angle translation maps onto the triangle and verify the angle sum at a glance. Use the described data shape and labels; when exact values are not supplied, use plausible illustrative values that preserve the relationships in the brief. Use a zero baseline for bars or areas, direct labels where possible, and annotations named in the brief. Use only DESIGN.md color variables and the required serif/mono font split.
+
+> Reference implementation: `d3/10-further-applications-of-trigonometry-fig-05.html`
