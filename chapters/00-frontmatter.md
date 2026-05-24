@@ -1,22 +1,6 @@
-<!--
-    00-frontmatter.md
-    FRONT MATTER — everything that appears before Chapter 1.
-
-    Four sections in order:
-      1. Title page
-      2. Copyright page
-      3. Dedication (optional — delete if not using)
-      4. Preface
-
-    Do not number these sections. They use roman numerals in print
-    and appear before the body in the compiled EPUB.
-
-    The Preface does different work than the Introduction:
-      - Preface  = author's voice; why the book exists, why you wrote it
-      - Introduction = reader's roadmap; what the book argues, how it is organized
--->
-
 # College Algebra: with LLMs
+
+*AI+1, Hands on. Domain specific. No generic prompts.*
 
 **Humanitarians AI**
 
@@ -26,22 +10,46 @@
 
 Copyright © 2026 Humanitarians AI. All rights reserved.
 
-Published by Humanitarians AI.
+Published by Humanitarians AI, a 501(c)(3) nonprofit organization.
+Boston, Massachusetts
+[humanitarians.ai](https://www.humanitarians.ai/)
 
-No part of this publication may be reproduced, distributed, or transmitted in
-any form or by any means without the prior written permission of the publisher,
-except in the case of brief quotations in critical reviews and certain other
-noncommercial uses permitted by copyright law.
+---
+
+### License
+
+The text of this book is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. You are free to share, adapt, and build upon this material — including for commercial purposes — provided you give appropriate credit to the original work and indicate if changes were made.
+
+Full license terms: [creativecommons.org/licenses/by/4.0](https://creativecommons.org/licenses/by/4.0/)
+
+**Trademark notice:** The name **AI+1**, the **AI+1 series mark**, and the associated cover image design are trademarks of Humanitarians AI. The CC BY 4.0 license does not grant permission to use these marks. Derivative works must carry their own original title and cover design, and must credit this work as the source.
+
+Suggested attribution for derivative works:
+
+> *Adapted from College Algebra: with LLMs, part of the AI+1 series by Humanitarians AI (humanitarians.ai), used under CC BY 4.0.*
+
+---
+
+### How This Book Is Distributed
+
+Books in the AI+1 series are published through Amazon Kindle and priced at the Kindle minimum ($0.99) to keep access as close to free as possible. All titles are enrolled in **Kindle Unlimited**, allowing subscribers to read at no additional cost. **Promotional free-distribution windows** are offered at the start of each academic term to support course adoption.
+
+Free digital editions and supplementary materials are maintained at [irreducibly.xyz](https://irreducibly.xyz).
+
+---
+
+### AI and Errata Disclosure
+
+Agentic AI was used to help gather data, check assertions, and prepare supporting references for this book. The material goes through multiple review steps, but mistakes can still occur. Errata, corrections, and suspected mistakes may be submitted through the publisher's website at [humanitarians.ai](https://www.humanitarians.ai/).
+
+---
 
 ISBN: [INSERT ISBN]
-
 First edition: 2026
 
 ---
 
 ## Dedication
-
-<!-- Optional. Delete this section if not using. -->
 
 *[For — ]*
 
@@ -57,7 +65,7 @@ This book is part of the **AI+1 series** — a curriculum published by Humanitar
 
 ## What is this book?
 
-[BOOK-SPECIFIC: one paragraph stating the book's exact scope and the discipline it serves. Name what the reader will be able to do that they cannot do now. Name what the book does *not* cover.]
+[BOOK-SPECIFIC: One paragraph stating the book's exact scope and the discipline it serves. Name what the reader will be able to do that they cannot do now. Name what the book does *not* cover.]
 
 The organizing frame is the AI+1 argument: you do not need to leave your field to work at the frontier. You need to add the layer of capability your field now requires — the judgment layer, the supervision layer, the reasoning layer that AI cannot perform and that your domain expertise uniquely equips you to hold. This book renders that argument for [DOMAIN].
 
@@ -65,7 +73,7 @@ The organizing frame is the AI+1 argument: you do not need to leave your field t
 
 ## The Series
 
-Every book in the AI+1 series asks the same question in a different domain: *what does a [domain professional] with AI superpowers actually know how to do?*
+Every book in the AI+1 series asks the same question in a different domain: *what does a [DOMAIN PROFESSIONAL] with AI superpowers actually know how to do?*
 
 The answer is never "write better prompts." It is always a precise account of where human cognition is irreplaceable in that domain — and what it looks like to build and exercise that capacity in practice.
 
@@ -77,7 +85,7 @@ The full taxonomy, the series index, and free digital versions of every book are
 
 ## Why now
 
-[BOOK-SPECIFIC: one to two paragraphs on the specific urgency in this domain. What is breaking, accelerating, or newly possible in [DOMAIN] because of AI? What is the harm being done right now by the absence of the capability this book teaches?]
+[BOOK-SPECIFIC: One to two paragraphs on the specific urgency in this domain. What is breaking, accelerating, or newly possible in [DOMAIN] because of AI? What is the harm being done right now by the absence of the capability this book teaches?]
 
 The general answer is always the same: AI systems are being deployed faster than the institutions deploying them can evaluate them. The professionals most affected are often the least equipped — not because they are unsophisticated, but because their training was built for a world where the execution layer and the judgment layer lived in the same person. That world is ending. This book is for the transition.
 
@@ -93,7 +101,7 @@ Nik Bear Brown's doctorate is in computer science from UCLA, with a major field 
 
 The nonprofit was founded on the observation that the most consequential AI failures are not engineering failures — they are judgment failures. The algorithm ran. Nobody was conducting it. Humanitarians AI exists to build the conductors.
 
-[BOOK-SPECIFIC CONTRIBUTOR PARAGRAPH: one paragraph naming the domain expert(s) who supplied the field knowledge this rendering required. This paragraph changes with each book.]
+[BOOK-SPECIFIC: One paragraph naming the domain expert(s) who supplied the field knowledge this rendering required.]
 
 Course materials, slide decks, and assignment scaffolds for courses using this book are available at [bearbrown.co](https://www.bearbrown.co/).
 
