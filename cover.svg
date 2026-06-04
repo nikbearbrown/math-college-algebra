@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2560" width="1600" height="2560" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <g id="background"><rect x="0" y="0" width="1600" height="2560" fill="#F5C518"/></g>
+  <g id="symbol-fragments" transform="rotate(-11, 800, 830)">
+    <polygon points="569,898 506,736 598,571 783,547 1089,614 1263,750 1034,928 760,1024" fill="#111111"/>
+    <polygon points="984,827 910,944 614,919 494,810 590,671 685,529 894,593 1071,674" fill="#F5C518"/>
+    <polygon points="990,844 797,915 616,840 574,732 636,641 794,572 960,619 999,720" fill="#111111"/>
+    <polygon points="908,753 851,800 767,834 706,783 643,723 741,681 811,644 876,700" fill="#F5C518"/>
+    <polygon points="807,837 760,752 817,688 922,674 934,776 905,858" fill="#D62B2B"/>
+  </g>
+  <g id="title-letterforms">
+    <text x="120" y="1510" font-family="Arial Black, Arial, sans-serif" font-size="250" font-weight="900" letter-spacing="0" fill="#111111" textLength="1300" lengthAdjust="spacingAndGlyphs">COLLEGE</text>
+    <text x="120" y="1768" font-family="Arial Black, Arial, sans-serif" font-size="250" font-weight="900" letter-spacing="0" fill="#D62B2B" textLength="1300" lengthAdjust="spacingAndGlyphs">ALGEBRA</text>
+  </g>
+</svg>
