@@ -1,5 +1,12 @@
 # Chapter 12 — Analytic Geometry
 
+
+## TL;DR
+
+- The chapter where a cone, sliced four different ways, explains satellite orbits, whispering galleries, and parabolic headlights.
+- The chapter moves through A distance condition is a curve, The ellipse, Eccentricity, Where the focus matters physically, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The chapter where a cone, sliced four different ways, explains satellite orbits, whispering galleries, and parabolic headlights.*
 
 ---
@@ -283,8 +290,7 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 **Pierre de Fermat** developed analytic geometry independently of (and slightly before) Descartes — though Descartes published first. Fermat's *Ad Locos Planos et Solidos Isagoge* showed how algebraic equations could describe curves.
 
 **Run this:**

@@ -1,4 +1,11 @@
 # Chapter 4 — Linear Functions
+
+## TL;DR
+
+- A Fixed Part, a Rate Part, and Everything Else Follows.
+- The chapter moves through The Anatomy of a Line, Three Ways to Write the Same Line, What Slope Really Means, From Words to Equations, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *A Fixed Part, a Rate Part, and Everything Else Follows.*
 
 In January, a homeowner in Vermont opens a heating bill. It reads: $\$45$ base service charge, plus $\$1.20$ per gallon of oil delivered. She ordered 80 gallons. The bill is $45 + 1.20 \times 80 = \$141$.
@@ -224,9 +231,12 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 **René Descartes** introduced the coordinate system bearing his name in *La Géométrie* in 1637 — letting algebra and geometry talk to each other for the first time. Every line graph and linear function lives on his grid.
+
+![René Descartes](../images/rene-descartes-29a.png)
+
+*Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
 
 **Run this:**
 

@@ -1,4 +1,11 @@
 # Chapter 13 — Sequences, Probability, and Counting Theory
+
+## TL;DR
+
+- Surprising but Certain: What Mathematics Produces When It Works Correctly.
+- The chapter moves through Sequences: The Rules Behind the List, Series: Adding Up the Terms, The Binomial Theorem: What Happens When You Expand $(a + b)^n$, Counting: The Multiplication Principle and Its Consequences, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Surprising but Certain: What Mathematics Produces When It Works Correctly.*
 
 Here is a question that sounds easy: what is $0.\overline{36}$?
@@ -221,8 +228,7 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 **Sofia Kovalevskaya** was the first woman to earn a doctorate in mathematics (in 1874) — and her later work on partial differential equations, combinatorics, and elliptic functions reshaped multiple subfields. She spent most of her career at the University of Stockholm because no Russian university would hire her.
 
 **Run this:**

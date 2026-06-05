@@ -1,4 +1,11 @@
 # Chapter 10 — Further Applications of Trigonometry
+
+## TL;DR
+
+- How Angles Measured from a Hundred Miles Away Revealed the Height of the World.
+- The chapter moves through Oblique Triangles, The Law of Sines, The Law of Cosines, Polar Coordinates, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *How Angles Measured from a Hundred Miles Away Revealed the Height of the World.*
 
 In 1852, a mathematician in Calcutta named Radhanath Sikdar noticed something unusual in the survey data streaming in from the Himalayan foothills. For years, the Great Trigonometric Survey of India had been triangulating its way northward — measuring angles, computing distances, tying station to station across the subcontinent with extraordinary care. One peak, designated Peak XV, kept coming out taller than every other measurement in the record. Sikdar walked into the office of Superintendent Andrew Waugh and is said to have reported: "Sir, I have discovered the highest mountain in the world."
@@ -245,9 +252,7 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
-**Bhāskara II** wrote the *Līlāvatī* in 12th-century India — a textbook of arithmetic, algebra, and trigonometry that became standard in Indian schools for centuries. Many trigonometric identities and applications we still teach were systematized by him.
+##  AI Wayback Machine
 
 **Run this:**
 

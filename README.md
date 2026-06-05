@@ -1,35 +1,39 @@
 # College Algebra: with LLMs
 
-**Publisher:** Humanitarians AI  
-**Edition:** 2026  
-**License:** CC BY 4.0 for text; AI+1 marks and cover design are trademarks of Humanitarians AI.
+**Author:** Humanitarians AI Incorporated  
+**Publisher:** Humanitarians AI Incorporated, a 501(c)(3) nonprofit organization  
+**Copyright:** Copyright © 2026 Humanitarians AI Incorporated. All rights reserved.  
+**Edition:** 2026
 
-## Overview
+## Summary
 
-College Algebra: with LLMs is part of the AI+1 series from Humanitarians AI. The book asks what a College Algebra practitioner can do with AI while preserving the human judgment, accountability, and domain expertise that the tool cannot supply.
+*College Algebra: with LLMs* is a structured textbook for readers who need a clear path through the subject rather than a loose collection of explanations. It begins with Chapter 1 — Prerequisites, moves through 13 core chapters, and ends with Chapter 13 — Sequences, Probability, and Counting Theory.
 
-The book's front matter explains the copyright, CC BY 4.0 license, distribution model, AI and errata disclosure, and the Humanitarians AI publishing context. The introduction frames the reader's path through the chapters: where AI helps, where it fails, and how to keep the boundary between execution and judgment visible.
+AI matters to *College Algebra: with LLMs* because the modern textbook is no longer only a static container. It is also part of a learning system: searchable, remixable, explainable, and increasingly connected to tools such as Medhavy. For Humanitarians AI books, the relevant question is not whether AI can replace the learner or the teacher. It cannot. The useful question is what AI can make easier to inspect: definitions, worked examples, misconceptions, practice sequences, alternate explanations, and the structure of an argument. This book treats AI as infrastructure for open, public-interest learning infrastructure. The chapters should still stand on their own as readable prose, but they are also designed to be legible to an intelligent textbook system.
 
 ## Table of Contents
 
-- [Chapter 1 — Prerequisites](chapters/01-prerequisites.md)
-- [Chapter 2 — Equations and Inequalities](chapters/02-equations-and-inequalities.md)
-- [Chapter 3 — Functions](chapters/03-functions.md)
-- [Chapter 4 — Linear Functions](chapters/04-linear-functions.md)
-- [Chapter 5 — Polynomial and Rational Functions](chapters/05-polynomial-and-rational-functions.md)
-- [Chapter 6 — Exponential and Logarithmic Functions](chapters/06-exponential-and-logarithmic-functions.md)
-- [Chapter 7 — The Unit Circle: Sine and Cosine Functions](chapters/07-the-unit-circle-sine-and-cosine-functions.md)
-- [Chapter 8 — Periodic Functions](chapters/08-periodic-functions.md)
-- [Chapter 9 — Trigonometric Identities and Equations](chapters/09-trigonometric-identities-and-equations.md)
-- [Chapter 10 — Further Applications of Trigonometry](chapters/10-further-applications-of-trigonometry.md)
-- [Chapter 11 — Systems of Equations and Inequalities](chapters/11-systems-of-equations-and-inequalities.md)
-- [Chapter 12 — Analytic Geometry](chapters/12-analytic-geometry.md)
-- [Chapter 13 — Sequences, Probability, and Counting Theory](chapters/13-sequences-probability-and-counting-theory.md)
+- **Chapter 1: Chapter 1 — Prerequisites.** - Every Number You Will Ever Need Is Already in the Cold. - The chapter moves through The Kinds of Numbers (And Why the Distinctions Matter), The Rules for Moving Numbers Around, Exponents: Shorthand for Repeated Multiplication, Scientific Notation, and related ideas....
+- **Chapter 2: Chapter 2 — Equations and Inequalities.** - What it means to find the number that makes a sentence true. - The chapter moves through The tollbooth problem, Part 1 — Linear equations: one unknown, one power, The variable on both sides, Rational equations, and related ideas. - Read...
+- **Chapter 3: Chapter 3 — Functions.** - One rule, one output — and why that constraint unlocks everything else. - The chapter moves through What a function actually is, The notation, The domain and the range, Testing a graph, and related ideas. - Read it for the main...
+- **Chapter 4: Chapter 4 — Linear Functions.** - A Fixed Part, a Rate Part, and Everything Else Follows. - The chapter moves through The Anatomy of a Line, Three Ways to Write the Same Line, What Slope Really Means, From Words to Equations, and related ideas. - Read it...
+- **Chapter 5: Chapter 5 — Polynomial and Rational Functions.** - What happens when a curve is allowed to bend more than once. - The chapter moves through The cannonball and the accountant, Part 1 — Quadratic functions: the bend with a name, Finding the vertex two ways, A quadratic optimization problem,...
+- **Chapter 6: Chapter 6 — Exponential and Logarithmic Functions.** - The chapter where multiplication becomes addition, and time becomes the unknown. - The chapter moves through The function that grows by multiplying, The base that keeps appearing, What compound interest is actually doing, The inverse: given the output, find the exponent,...
+- **Chapter 7: Chapter 7 — The Unit Circle: Sine and Cosine Functions.** - The Wave Is the Shadow of the Circle. - The chapter moves through Measuring Angles Two Ways, Angles That Share a Terminal Side, The Right-Triangle Definitions, The Unit Circle, and related ideas. - Read it for the main argument, the vocabulary...
+- **Chapter 8: Chapter 8 — Periodic Functions.** - Why the same four numbers describe everything that repeats. - The chapter moves through The thing about tides, Part 1 — Sine and cosine: the basic wave, The four parameters, Reading parameters from data, and related ideas. - Read it for...
+- **Chapter 9: Chapter 9 — Trigonometric Identities and Equations.** - The chapter where the same angle, looked at from different directions, turns out to be the same angle. - The chapter moves through What an identity is, and why it is different from an equation, The sum and difference formulas, What...
+- **Chapter 10: Chapter 10 — Further Applications of Trigonometry.** - How Angles Measured from a Hundred Miles Away Revealed the Height of the World. - The chapter moves through Oblique Triangles, The Law of Sines, The Law of Cosines, Polar Coordinates, and related ideas. - Read it for the main argument,...
+- **Chapter 11: Chapter 11 — Systems of Equations and Inequalities.** - What happens when one equation isn't enough. - The chapter moves through Two constraints, one Saturday morning, Part 1 — Linear systems: the geometry of intersection, Substitution, Elimination, and related ideas. - Read it for the main argument, the vocabulary it...
+- **Chapter 12: Chapter 12 — Analytic Geometry.** - The chapter where a cone, sliced four different ways, explains satellite orbits, whispering galleries, and parabolic headlights. - The chapter moves through A distance condition is a curve, The ellipse, Eccentricity, Where the focus matters physically, and related ideas. - Read...
+- **Chapter 13: Chapter 13 — Sequences, Probability, and Counting Theory.** - Surprising but Certain: What Mathematics Produces When It Works Correctly. - The chapter moves through Sequences: The Rules Behind the List, Series: Adding Up the Terms, The Binomial Theorem: What Happens When You Expand $(a + b)^n$, Counting: The Multiplication Principle...
 
-## Copyright and License
+## Files
 
-Copyright © 2026 Humanitarians AI. The text is licensed under CC BY 4.0. See [LICENSE.md](LICENSE.md) for full terms, including trademark restrictions for AI+1 marks and cover design.
+- `chapters/00-frontmatter.md` — title page, copyright, dedication, and preface
+- `chapters/00-introduction.md` — roadmap and book-level AI note
+- `chapters/99-back-matter.md` — acknowledgments, author note, references placeholder, and Medhavy note
+- `LICENSE.md` — rights and reuse terms
 
-## Errata
+## Medhavy
 
-Errata, corrections, and suspected mistakes may be submitted through [humanitarians.ai](https://www.humanitarians.ai/).
+This book is prepared for Kindle, online publication, and integration with Medhavy: https://www.medhavy.com/

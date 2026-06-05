@@ -1,4 +1,11 @@
 # Chapter 1 — Prerequisites
+
+## TL;DR
+
+- Every Number You Will Ever Need Is Already in the Cold.
+- The chapter moves through The Kinds of Numbers (And Why the Distinctions Matter), The Rules for Moving Numbers Around, Exponents: Shorthand for Repeated Multiplication, Scientific Notation, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Every Number You Will Ever Need Is Already in the Cold.*
 
 On July 21, 1983, a satellite passed over Vostok Station on the East Antarctic Plateau — 11,000 feet above sea level, deep in the continent's interior — and recorded the surface temperature: $-89.2°\text{C}$. The coldest temperature ever measured on Earth.
@@ -281,9 +288,7 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
-**Brahmagupta** wrote the *Brāhmasphuṭasiddhānta* in 628 CE — establishing rules for zero, negative numbers, and arithmetic with both. The number system that makes modern algebra possible begins with him.
+##  AI Wayback Machine
 
 **Run this:**
 

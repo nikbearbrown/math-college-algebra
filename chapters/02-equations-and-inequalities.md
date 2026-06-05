@@ -1,5 +1,12 @@
 # Chapter 2 — Equations and Inequalities
 
+
+## TL;DR
+
+- What it means to find the number that makes a sentence true.
+- The chapter moves through The tollbooth problem, Part 1 — Linear equations: one unknown, one power, The variable on both sides, Rational equations, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *What it means to find the number that makes a sentence true.*
 
 ---
@@ -345,9 +352,7 @@ The following prompts are designed for extended engagement with a large language
 
 ---
 
-## AI Wayback Machine
-
-**Diophantus of Alexandria** wrote *Arithmetica* around 250 CE — the first systematic treatment of equations and unknowns. He invented much of the notation that classical algebra eventually formalized.
+##  AI Wayback Machine
 
 **Run this:**
 

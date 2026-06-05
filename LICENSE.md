@@ -1,15 +1,15 @@
 # License
 
-Copyright © 2026 Humanitarians AI. All rights reserved.
+Copyright © 2026 Humanitarians AI Incorporated. All rights reserved.
 
-The text of **College Algebra: with LLMs** is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). You are free to share, adapt, and build upon this material, including for commercial purposes, provided you give appropriate credit to the original work and indicate if changes were made.
+Published by Humanitarians AI Incorporated, a 501(c)(3) nonprofit organization.
 
-Full license terms: [creativecommons.org/licenses/by/4.0](https://creativecommons.org/licenses/by/4.0/)
+All rights reserved.
 
-## Trademark Notice
+No part of this publication may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the publisher, except in the case of brief quotations in critical reviews and certain other noncommercial uses permitted by copyright law.
 
-The name **AI+1**, the **AI+1 series mark**, and the associated cover image design are trademarks of Humanitarians AI. The CC BY 4.0 license does not grant permission to use these marks. Derivative works must carry their own original title and cover design, and must credit this work as the source.
+This license applies to the text, structure, and book materials for *College Algebra: with LLMs* unless a specific file states otherwise.
 
-## Suggested Attribution
+ISBN: [INSERT ISBN]
 
-> *Adapted from College Algebra: with LLMs, part of the AI+1 series by Humanitarians AI (humanitarians.ai), used under CC BY 4.0.*
+First edition: 2026

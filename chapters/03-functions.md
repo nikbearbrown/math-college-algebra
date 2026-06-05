@@ -1,4 +1,11 @@
 # Chapter 3 — Functions
+
+## TL;DR
+
+- One rule, one output — and why that constraint unlocks everything else.
+- The chapter moves through What a function actually is, The notation, The domain and the range, Testing a graph, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *One rule, one output — and why that constraint unlocks everything else.*
 
 ---
@@ -297,9 +304,12 @@ The single idea underneath all of this: **a function is a single-valued rule, an
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 **Leonhard Euler** introduced the modern function notation *f(x)* in 1734 — and built much of the theory of functions in the 1740s. His notation is so successful that we rarely notice it.
+
+![Leonhard Euler](../images/leonhard-euler-bbq.png)
+
+*Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
 
 **Run this:**
 

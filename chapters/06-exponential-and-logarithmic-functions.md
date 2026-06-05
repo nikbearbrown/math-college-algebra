@@ -1,5 +1,12 @@
 # Chapter 6 — Exponential and Logarithmic Functions
 
+
+## TL;DR
+
+- The chapter where multiplication becomes addition, and time becomes the unknown.
+- The chapter moves through The function that grows by multiplying, The base that keeps appearing, What compound interest is actually doing, The inverse: given the output, find the exponent, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The chapter where multiplication becomes addition, and time becomes the unknown.*
 
 ---
@@ -289,9 +296,11 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
+##  AI Wayback Machine
 
-**John Napier** invented logarithms in 1614 — a calculation tool that reduced multiplication of large numbers to addition. His tables revolutionized astronomy and navigation by cutting computation time by a factor of ten.
+![John Napier](../images/john-napier-gz5.png)
+
+*Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
 
 **Run this:**
 

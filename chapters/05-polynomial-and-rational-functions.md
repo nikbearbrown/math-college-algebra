@@ -1,5 +1,12 @@
 # Chapter 5 — Polynomial and Rational Functions
 
+
+## TL;DR
+
+- What happens when a curve is allowed to bend more than once.
+- The chapter moves through The cannonball and the accountant, Part 1 — Quadratic functions: the bend with a name, Finding the vertex two ways, A quadratic optimization problem, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *What happens when a curve is allowed to bend more than once.*
 
 ---
@@ -305,8 +312,7 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 **Évariste Galois** developed the theory connecting polynomial roots to group symmetries between 1828 and his death at age 20 in a duel — work that founded modern algebra. The night before the duel he wrote out as much of the theory as he could.
 
 **Run this:**

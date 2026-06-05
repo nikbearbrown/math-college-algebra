@@ -1,5 +1,12 @@
 # Chapter 8 — Periodic Functions
 
+
+## TL;DR
+
+- Why the same four numbers describe everything that repeats.
+- The chapter moves through The thing about tides, Part 1 — Sine and cosine: the basic wave, The four parameters, Reading parameters from data, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *Why the same four numbers describe everything that repeats.*
 
 ---
@@ -247,8 +254,7 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 **Joseph Fourier** showed in 1822 that any periodic function can be decomposed into a sum of sines and cosines — Fourier series. The result reshaped not only mathematics but also physics, signal processing, and modern audio compression.
 
 **Run this:**

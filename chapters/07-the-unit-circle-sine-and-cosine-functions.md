@@ -1,4 +1,11 @@
 # Chapter 7 — The Unit Circle: Sine and Cosine Functions
+
+## TL;DR
+
+- The Wave Is the Shadow of the Circle.
+- The chapter moves through Measuring Angles Two Ways, Angles That Share a Terminal Side, The Right-Triangle Definitions, The Unit Circle, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The Wave Is the Shadow of the Circle.*
 
 Watch one car on a Ferris wheel.
@@ -240,9 +247,7 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
-**Madhava of Sangamagrama** developed the infinite series for sine and cosine in 14th-century Kerala — two centuries before Newton and Leibniz. The "Madhava-Leibniz series" for π is named jointly to recognize his priority.
+##  AI Wayback Machine
 
 **Run this:**
 

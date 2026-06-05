@@ -1,5 +1,12 @@
 # Chapter 9 — Trigonometric Identities and Equations
 
+
+## TL;DR
+
+- The chapter where the same angle, looked at from different directions, turns out to be the same angle.
+- The chapter moves through What an identity is, and why it is different from an equation, The sum and difference formulas, What you can do with them immediately, Double angles and half angles, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *The chapter where the same angle, looked at from different directions, turns out to be the same angle.*
 
 ---
@@ -349,9 +356,12 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 **Hipparchus of Nicaea** compiled the first known trigonometric table around 130 BCE — establishing trig as a discipline. Most of the identities we still teach today have a continuous lineage back to his calculations.
+
+![Hipparchus](../images/hipparchus-5s7.png)
+
+*Puppet Art by [Nik Bear Brown](https://www.nikbearbrown.com/).*
 
 **Run this:**
 

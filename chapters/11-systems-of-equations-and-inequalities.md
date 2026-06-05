@@ -1,5 +1,12 @@
 # Chapter 11 — Systems of Equations and Inequalities
 
+
+## TL;DR
+
+- What happens when one equation isn't enough.
+- The chapter moves through Two constraints, one Saturday morning, Part 1 — Linear systems: the geometry of intersection, Substitution, Elimination, and related ideas.
+- Read it for the main argument, the vocabulary it introduces, and the practical judgment it asks you to develop.
+
 *What happens when one equation isn't enough.*
 
 ---
@@ -299,8 +306,7 @@ These exercises are designed to be explored conversationally with a language mod
 
 ---
 
-## AI Wayback Machine
-
+##  AI Wayback Machine
 **Carl Friedrich Gauss** developed the method of elimination for solving systems of linear equations — now called Gaussian elimination — in 1809. His method is the basis of every modern computational linear-algebra routine.
 
 **Run this:**
